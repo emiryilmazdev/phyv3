@@ -6,21 +6,21 @@ export default function BlogSection() {
   const blogPosts = [
     {
       id: 1,
-      title: 'Fizyoterapi ile Ağrı Yönetimi: Etkili Yöntemler',
+      title: 'Pain Management with Physiotherapy: Effective Methods',
       image: '/images/post-1.jpg',
-      slug: 'fizyoterapi-ile-agri-yonetimi'
+      slug: 'pain-management-with-physiotherapy'
     },
     {
       id: 2,
-      title: 'Spor Yaralanmalarından Korunma Rehberi',
+      title: 'Sports Injury Prevention Guide',
       image: '/images/post-2.jpg',
-      slug: 'spor-yaralanmalarindan-korunma'
+      slug: 'sports-injury-prevention-guide'
     },
     {
       id: 3,
-      title: 'Evde Yapabileceğiniz Rehabilitasyon Egzersizleri',
+      title: 'Rehabilitation Exercises You Can Do at Home',
       image: '/images/post-3.jpg',
-      slug: 'evde-rehabilitasyon-egzersizleri'
+      slug: 'home-rehabilitation-exercises'
     }
   ]
 
@@ -32,10 +32,10 @@ export default function BlogSection() {
             {/* Section Title Start */}
             <div className="section-title">
               <AnimatedDiv delay={0}>
-                <h3>Son Blog Yazıları</h3>
+                <h3>Latest Blog Posts</h3>
               </AnimatedDiv>
               <h2 className="text-anime-style-2" data-cursor="-opaque">
-                Sağlık ve fizyoterapi alanında <span>uzman görüşleri</span>
+                Expert insights in health and <span>physiotherapy</span>
               </h2>
             </div>
             {/* Section Title End */}
@@ -45,7 +45,7 @@ export default function BlogSection() {
             {/* Section Button Start */}
             <AnimatedDiv className="section-btn" delay={0.2}>
               <Link href="/blog" className="btn-default">
-                Tüm Blog Yazıları
+                All Blog Posts
               </Link>
             </AnimatedDiv>
             {/* Section Button End */}
@@ -82,7 +82,7 @@ export default function BlogSection() {
                   {/* Post Item Readmore Button Start */}
                   <div className="post-item-btn">
                     <Link href={`/blog/${post.slug}`} className="readmore-btn">
-                      Devamını Oku
+                      Read More
                     </Link>
                   </div>
                   {/* Post Item Readmore Button End */}

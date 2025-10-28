@@ -33,17 +33,17 @@ export default function ContactPage() {
     setIsSubmitting(true)
     setSubmitMessage('')
 
-    // Form validasyonu
+    // Form validation
     if (!formData.firstName.trim() || !formData.lastName.trim() || !formData.email.trim() || !formData.message.trim()) {
-      setSubmitMessage('❌ Lütfen tüm gerekli alanları doldurun.')
+      setSubmitMessage('❌ Please fill in all required fields.')
       setIsSubmitting(false)
       return
     }
 
-    // E-posta formatı kontrolü
+    // Email format validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(formData.email)) {
-      setSubmitMessage('❌ Lütfen geçerli bir e-posta adresi girin.')
+      setSubmitMessage('❌ Please enter a valid email address.')
       setIsSubmitting(false)
       return
     }
@@ -56,10 +56,10 @@ export default function ContactPage() {
       formDataToSend.append("email", formData.email.trim())
       formDataToSend.append("phone", formData.phone.trim())
       formDataToSend.append("message", formData.message.trim())
-      formDataToSend.append("subject", "Şimal Ongun Fizyoterapi - Yeni İletişim Formu")
-      formDataToSend.append("from_name", "Şimal Ongun Website")
+      formDataToSend.append("subject", "Simal Ongun Physiotherapy - New Contact Form")
+      formDataToSend.append("from_name", "Simal Ongun Website")
 
-      console.log('Gönderilen veriler:', {
+      console.log('Sent data:', {
         name: `${formData.firstName.trim()} ${formData.lastName.trim()}`,
         email: formData.email.trim(),
         phone: formData.phone.trim(),
@@ -72,10 +72,10 @@ export default function ContactPage() {
       })
 
       const data = await response.json()
-      console.log('API Yanıtı:', data)
+      console.log('API Response:', data)
 
       if (data.success) {
-        setSubmitMessage('✅ Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.')
+        setSubmitMessage('✅ Your message has been sent successfully! We will get back to you as soon as possible.')
         setFormData({
           firstName: '',
           lastName: '',
@@ -84,12 +84,12 @@ export default function ContactPage() {
           message: ''
         })
       } else {
-        console.error('API Hatası:', data)
-        setSubmitMessage(`❌ Hata: ${data.message || 'Mesaj gönderilirken bir hata oluştu.'}`)
+        console.error('API Error:', data)
+        setSubmitMessage(`❌ Error: ${data.message || 'An error occurred while sending the message.'}`)
       }
     } catch (error) {
       console.error('Form submission error:', error)
-      setSubmitMessage('❌ Ağ hatası: Lütfen internet bağlantınızı kontrol edin ve tekrar deneyin.')
+      setSubmitMessage('❌ Network error: Please check your internet connection and try again.')
     } finally {
       setIsSubmitting(false)
     }
@@ -106,15 +106,15 @@ export default function ContactPage() {
             <div className="col-lg-12">
               <div className="page-header-box">
                 <h1 className="text-anime-style-2" data-cursor="-opaque">
-                  İletişim <span>Bilgileri</span>
+                  Contact <span>Information</span>
                 </h1>
                 <nav className="wow fadeInUp">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <Link href="/">Ana Sayfa</Link>
+                      <Link href="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
-                      İletişim
+                      Contact
                     </li>
                   </ol>
                 </nav>
@@ -134,13 +134,13 @@ export default function ContactPage() {
               <div className="contact-us-content">
                 {/* Section Title Start */}
                 <div className="section-title">
-                  <h3 className="wow fadeInUp">İletişim</h3>
+                  <h3 className="wow fadeInUp">Contact</h3>
                   <h2 className="text-anime-style-2" data-cursor="-opaque">
-                    Bizimle <span>iletişime geçin</span>
+                    Get in <span>touch with us</span>
                   </h2>
                   <p className="wow fadeInUp" data-wow-delay="0.2s">
-                    Sağlığınızı geri kazanma yolculuğunuzda size destek olmak için buradayız.
-                    Sorularınız için bize ulaşın, danışmanlık alın veya randevu planlayın.
+                    We are here to support you on your journey to regain your health.
+                    Contact us for your questions, get consultation or schedule an appointment.
                   </p>
                 </div>
                 {/* Section Title End */}
@@ -155,7 +155,7 @@ export default function ContactPage() {
                         <FiPhone size={24} />
                       </div>
                       <div className="contact-item-content">
-                        <h3>Telefon</h3>
+                        <h3>Phone</h3>
                         <p>
                           <a href="tel:+447123456789">+44 7123 456 789</a>
                         </p>
@@ -169,7 +169,7 @@ export default function ContactPage() {
                         <FiMail size={24} />
                       </div>
                       <div className="contact-item-content">
-                        <h3>E-posta</h3>
+                        <h3>Email</h3>
                         <p>
                           <a href="mailto:info@simalongun.com">info@simalongun.com</a>
                         </p>
@@ -183,8 +183,8 @@ export default function ContactPage() {
                         <FiMapPin size={24} />
                       </div>
                       <div className="contact-item-content">
-                        <h3>Konum</h3>
-                        <p>Milton Keynes, İngiltere</p>
+                        <h3>Location</h3>
+                        <p>Milton Keynes, United Kingdom</p>
                       </div>
                     </div>
                     {/* Contact Info Item End */}
@@ -195,9 +195,9 @@ export default function ContactPage() {
                         <FiClock size={24} />
                       </div>
                       <div className="contact-item-content">
-                        <h3>Çalışma Saatleri</h3>
-                        <p>Pazartesi - Cuma: 09:00 - 18:00</p>
-                        <p>Cumartesi: 09:00 - 14:00</p>
+                        <h3>Working Hours</h3>
+                        <p>Monday - Friday: 09:00 - 18:00</p>
+                        <p>Saturday: 09:00 - 14:00</p>
                       </div>
                     </div>
                     {/* Contact Info Item End */}
@@ -206,7 +206,7 @@ export default function ContactPage() {
 
                   {/* Contact Social List Start */}
                   <div className="contact-social-links">
-                    <h3>Sosyal medyada takip edin:</h3>
+                    <h3>Follow us on social media:</h3>
                     <ul>
                       <li>
                         <a href="https://instagram.com/simalongun" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
@@ -243,7 +243,7 @@ export default function ContactPage() {
                 {/* Section Title Start */}
                 <div className="section-title">
                   <h2 className="text-anime-style-2" data-cursor="-opaque">
-                    Bize mesaj gönderin
+                    Send us a message
                   </h2>
                 </div>
                 {/* Section Title End */}
@@ -257,7 +257,7 @@ export default function ContactPage() {
                           type="text"
                           name="firstName"
                           className="form-control"
-                          placeholder="Ad"
+                          placeholder="First Name"
                           value={formData.firstName}
                           onChange={handleInputChange}
                           required
@@ -269,7 +269,7 @@ export default function ContactPage() {
                           type="text"
                           name="lastName"
                           className="form-control"
-                          placeholder="Soyad"
+                          placeholder="Last Name"
                           value={formData.lastName}
                           onChange={handleInputChange}
                           required
@@ -281,7 +281,7 @@ export default function ContactPage() {
                           type="tel"
                           name="phone"
                           className="form-control"
-                          placeholder="Telefon Numarası"
+                          placeholder="Phone Number"
                           value={formData.phone}
                           onChange={handleInputChange}
                           required
@@ -293,7 +293,7 @@ export default function ContactPage() {
                           type="email"
                           name="email"
                           className="form-control"
-                          placeholder="E-posta Adresi"
+                          placeholder="Email Address"
                           value={formData.email}
                           onChange={handleInputChange}
                           required
@@ -305,7 +305,7 @@ export default function ContactPage() {
                           name="message"
                           className="form-control"
                           rows={6}
-                          placeholder="Mesajınızı buraya yazın... (Hangi hizmetimizle ilgili bilgi almak istiyorsunuz, şikayetleriniz neler, randevu talebiniz var mı?)"
+                          placeholder="Write your message here... (Which service would you like information about, what are your complaints, do you have an appointment request?)"
                           value={formData.message}
                           onChange={handleInputChange}
                           required
@@ -318,7 +318,7 @@ export default function ContactPage() {
                           className="btn-default"
                           disabled={isSubmitting}
                         >
-                          {isSubmitting ? '📤 Gönderiliyor...' : '📨 Mesaj Gönder'}
+                          {isSubmitting ? '📤 Sending...' : '📨 Send Message'}
                         </button>
                         {submitMessage && (
                           <div className={`contact-form-message mt-3 ${submitMessage.includes('✅') ? 'success' : 'error'}`}>
@@ -345,7 +345,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Milton Keynes Haritası"
+                  title="Milton Keynes Map"
                 />
               </div>
               {/* Google Map IFrame End */}

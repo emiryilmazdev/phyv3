@@ -93,10 +93,10 @@ export default function TestimonialsSection() {
             {/* Section Title Start */}
             <div className="section-title">
               <AnimatedDiv delay={0}>
-                <h3>Google Yorumları</h3>
+                <h3>Google Reviews</h3>
               </AnimatedDiv>
               <h2 className="text-anime-style-2" data-cursor="-opaque">
-                Hastalarımızın <span>Google'daki</span> gerçek deneyimleri
+                Real experiences of our patients <span>on Google</span>
               </h2>
             </div>
             {/* Section Title End */}
@@ -144,7 +144,7 @@ export default function TestimonialsSection() {
                   <FaStar />
                   <FaStar />
                 </div>
-                <p>4.9 (30+ Google Yorumu)</p>
+                <p>4.9 (30+ Google Reviews)</p>
               </div>
               {/* Google Rating Content End */}
             </AnimatedDiv>
@@ -176,7 +176,7 @@ export default function TestimonialsSection() {
                     <FaStar />
                     <FaStar />
                   </div>
-                  <p>Google Yorumları</p>
+                  <p>Google Reviews</p>
                 </div>
                 {/* Google Rating Content End */}
               </div>
@@ -202,15 +202,15 @@ export default function TestimonialsSection() {
                   <div className="exact-profile-section">
                     <div className="exact-avatar-container">
                       <div className="exact-avatar">
-                        <Image src="/images/author-1.jpg" alt="Songül Gül" width={40} height={40} />
+                        <Image src="/images/author-1.jpg" alt="Sarah Johnson" width={40} height={40} />
                       </div>
                       <div className="exact-google-badge">
                         <Image src="/images/icon-google.svg" alt="Google" width={16} height={16} />
                       </div>
                     </div>
                     <div className="exact-user-info">
-                      <h3 className="exact-username">Songül Gül</h3>
-                      <p className="exact-review-count">3 yorum</p>
+                      <h3 className="exact-username">Sarah Johnson</h3>
+                      <p className="exact-review-count">3 reviews</p>
                     </div>
                   </div>
                   <div className="exact-menu-dots">
@@ -227,17 +227,17 @@ export default function TestimonialsSection() {
                     <FaStar className="exact-star-filled" />
                     <FaStar className="exact-star-filled" />
                   </div>
-                  <span className="exact-time">bir hafta önce</span>
-                  <span className="exact-new-badge">YENİ</span>
+                  <span className="exact-time">a week ago</span>
+                  <span className="exact-new-badge">NEW</span>
                 </div>
 
                 {/* Review Content */}
                 <div className="exact-review-content">
                   <p>
-                    Şimal Hanım ile çalışmak gerçekten harika bir deneyimdi. Kalça ameliyatım
-                    sonrası yürümekte zorlanıyordum. Onun profesyonel yaklaşımı ve sabırlı
-                    tedavi süreci sayesinde sadece 8 haftada eski formuma kavuştum. Hem
-                    fiziksel hem de mental olarak kendimi çok daha iyi hissediyorum.
+                    Working with Simal was truly a wonderful experience. I was struggling to walk 
+                    after my hip surgery. Thanks to her professional approach and patient treatment 
+                    process, I regained my old form in just 8 weeks. I feel much better both 
+                    physically and mentally.
                   </p>
                 </div>
 
@@ -258,15 +258,15 @@ export default function TestimonialsSection() {
                   <div className="exact-profile-section">
                     <div className="exact-avatar-container">
                       <div className="exact-avatar">
-                        <Image src="/images/author-2.jpg" alt="Ayşe Demir" width={40} height={40} />
+                        <Image src="/images/author-2.jpg" alt="Emma Wilson" width={40} height={40} />
                       </div>
                       <div className="exact-google-badge">
                         <Image src="/images/icon-google.svg" alt="Google" width={16} height={16} />
                       </div>
                     </div>
                     <div className="exact-user-info">
-                      <h3 className="exact-username">Ayşe Demir</h3>
-                      <p className="exact-review-count">5 yorum</p>
+                      <h3 className="exact-username">Emma Wilson</h3>
+                      <p className="exact-review-count">5 reviews</p>
                     </div>
                   </div>
                   <div className="exact-menu-dots">
@@ -282,15 +282,15 @@ export default function TestimonialsSection() {
                     <FaStar className="exact-star-filled" />
                     <FaStar className="exact-star-filled" />
                   </div>
-                  <span className="exact-time">2 hafta önce</span>
+                  <span className="exact-time">2 weeks ago</span>
                 </div>
 
                 <div className="exact-review-content">
                   <p>
-                    Doğum sonrası pilates seansları hayat kurtardı! Şimal Hanım'ın uzman
-                    yaklaşımı sayesinde core kaslarım güçlendi ve postür problemlerim
-                    düzeldi. Diastasis recti sorunu tamamen iyileşti. Hem fiziksel hem de
-                    ruhsal olarak kendimi çok daha güçlü hissediyorum.
+                    Post-birth pilates sessions were life-saving! Thanks to Simal's expert 
+                    approach, my core muscles strengthened and my posture problems were corrected. 
+                    My diastasis recti issue completely healed. I feel much stronger both 
+                    physically and mentally.
                   </p>
                 </div>
 
@@ -310,15 +310,15 @@ export default function TestimonialsSection() {
                   <div className="exact-profile-section">
                     <div className="exact-avatar-container">
                       <div className="exact-avatar">
-                        <Image src="/images/author-3.jpg" alt="Can Yılmaz" width={40} height={40} />
+                        <Image src="/images/author-3.jpg" alt="James Thompson" width={40} height={40} />
                       </div>
                       <div className="exact-google-badge">
                         <Image src="/images/icon-google.svg" alt="Google" width={16} height={16} />
                       </div>
                     </div>
                     <div className="exact-user-info">
-                      <h3 className="exact-username">Can Yılmaz</h3>
-                      <p className="exact-review-count">2 yorum</p>
+                      <h3 className="exact-username">James Thompson</h3>
+                      <p className="exact-review-count">2 reviews</p>
                     </div>
                   </div>
                   <div className="exact-menu-dots">
@@ -334,14 +334,14 @@ export default function TestimonialsSection() {
                     <FaStar className="exact-star-filled" />
                     <FaStar className="exact-star-filled" />
                   </div>
-                  <span className="exact-time">1 ay önce</span>
+                  <span className="exact-time">1 month ago</span>
                 </div>
 
                 <div className="exact-review-content">
                   <p>
-                    Futbol yaralanması sonrası sahaya dönüş sürecim Şimal Hanım sayesinde çok
-                    hızlı oldu. Spor-spesifik egzersizler ve dry needling tedavisi ile kas
-                    gerginliklerim tamamen geçti. Performansım eskisinden bile daha iyi.
+                    My return to the field after a football injury was very fast thanks to Simal. 
+                    With sport-specific exercises and dry needling treatment, my muscle tensions 
+                    completely disappeared. My performance is even better than before.
                   </p>
                 </div>
 

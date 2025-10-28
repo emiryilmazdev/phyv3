@@ -67,7 +67,7 @@ export default function AboutSection() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 1, delay: 0.5 }}
           >
-            Şimal Ongun
+            Simal Ongun
           </motion.h2>
 
           <motion.p 
@@ -83,7 +83,7 @@ export default function AboutSection() {
             animate={isInView ? { opacity: 1 } : {}}
             transition={{ duration: 1, delay: 0.7 }}
           >
-            Fizyoterapist
+            Physiotherapist
           </motion.p>
         </motion.div>
 
@@ -138,7 +138,7 @@ export default function AboutSection() {
             }}>
               <Image 
                 src="/images/simbo.png" 
-                alt="Şimal Ongun" 
+                alt="Simal Ongun" 
                 width={280}
                 height={280}
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
@@ -190,9 +190,9 @@ export default function AboutSection() {
               transition={{ delay: 1.1, duration: 0.8 }}
             >
               {[
-                { value: 2, suffix: '+', label: 'Yıl Deneyim' },
-                { value: 300, suffix: '+', label: 'Mutlu Hasta' },
-                { value: 100, suffix: '%', label: 'Başarı Oranı' }
+                { value: 2, suffix: '+', label: 'Years Experience' },
+                { value: 300, suffix: '+', label: 'Happy Patients' },
+                { value: 100, suffix: '%', label: 'Success Rate' }
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -251,14 +251,14 @@ export default function AboutSection() {
                 marginBottom: '25px',
                 fontWeight: '300'
               }}>
-                Milton Keynes'te{' '}
+                I provide{' '}
                 <span style={{ 
                   color: '#8E714F',
                   fontWeight: '500'
                 }}>
-                  fizyoterapi ve rehabilitasyon
+                  physiotherapy and rehabilitation
                 </span>{' '}
-                hizmeti veriyorum. Istanbul Bezmialem Üniversitesi'nde başladığım yolculuğumu London Middlesex University'de yüksek lisansla sürdürdüm. Özel hastane deneyimimle birlikte kas-iskelet sistemi, nörolojik rehabilitasyon ve spor yaralanmaları üzerine yoğunlaştım. Her bireyin iyileşme sürecine özgü bir yol olduğuna inanıyor, tedavilerimi bu anlayışla planlıyorum.
+                services in Milton Keynes. I continued my journey that I started at Istanbul Bezmialem University with a master's degree at London Middlesex University. With my private hospital experience, I focused on musculoskeletal system, neurological rehabilitation and sports injuries. I believe that each individual has a unique path to recovery, and I plan my treatments with this understanding.
               </p>
 
               <motion.div
@@ -293,7 +293,7 @@ export default function AboutSection() {
                   whileTap={{ scale: 0.98 }}
                 >
                   <Link
-                    href="/hakkimda"
+                    href="/about"
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
@@ -310,7 +310,7 @@ export default function AboutSection() {
                       transition: 'all 0.3s ease'
                     }}
                   >
-                    <span>Daha Fazla Bilgi</span>
+                    <span>Learn More</span>
                     <motion.div
                       animate={{ x: [0, 3, 0] }}
                       transition={{
@@ -329,7 +329,7 @@ export default function AboutSection() {
                   whileTap={{ scale: 0.98 }}
                 >
                   <Link
-                    href="/iletisim"
+                    href="/contact"
                     style={{
                       display: 'inline-flex',
                       alignItems: 'center',
@@ -345,7 +345,7 @@ export default function AboutSection() {
                       transition: 'all 0.3s ease'
                     }}
                   >
-                    <span>Randevu Al</span>
+                    <span>Book Appointment</span>
                     <FiArrowRight size={16} />
                   </Link>
                 </motion.div>

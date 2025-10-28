@@ -36,10 +36,10 @@ export default function BookAppointmentSection() {
             {/* Section Title Start */}
             <div className="section-title section-title-center">
               <AnimatedDiv delay={0}>
-                <h3>İletişime Geç</h3>
+                <h3>Get In Touch</h3>
               </AnimatedDiv>
               <h2 className="text-anime-style-2" data-cursor="-opaque">
-                Fizyoterapi hizmetlerimiz için <span>iletişime geçin</span>
+                Contact us for our <span>physiotherapy services</span>
               </h2>
             </div>
             {/* Section Title End */}
@@ -64,11 +64,11 @@ export default function BookAppointmentSection() {
 
               {/* Appointment Info List Start */}
               <div className="appointment-timing-box">
-                <h3>Çalışma Saatleri:</h3>
+                <h3>Working Hours:</h3>
                 <ul>
-                  <li>Pazartesi - Cuma ( 09:00 - 21:00 )</li>
-                  <li>Cumartesi ( 09:00 - 14:00 )</li>
-                  <li>Pazar ( Kapalı )</li>
+                  <li>Monday - Friday ( 09:00 - 21:00 )</li>
+                  <li>Saturday ( 09:00 - 14:00 )</li>
+                  <li>Sunday ( Closed )</li>
                 </ul>
               </div>
               {/* Appointment Info List End */}
@@ -86,7 +86,7 @@ export default function BookAppointmentSection() {
                       type="text"
                       name="firstName"
                       className="form-control"
-                      placeholder="Ad"
+                      placeholder="First Name"
                       value={formData.firstName}
                       onChange={handleInputChange}
                       required
@@ -98,7 +98,7 @@ export default function BookAppointmentSection() {
                       type="text"
                       name="lastName"
                       className="form-control"
-                      placeholder="Soyad"
+                      placeholder="Last Name"
                       value={formData.lastName}
                       onChange={handleInputChange}
                       required
@@ -110,7 +110,7 @@ export default function BookAppointmentSection() {
                       type="email"
                       name="email"
                       className="form-control"
-                      placeholder="E-posta Adresi"
+                      placeholder="Email Address"
                       value={formData.email}
                       onChange={handleInputChange}
                       required
@@ -122,7 +122,7 @@ export default function BookAppointmentSection() {
                       type="text"
                       name="phone"
                       className="form-control"
-                      placeholder="Telefon Numarası"
+                      placeholder="Phone Number"
                       value={formData.phone}
                       onChange={handleInputChange}
                       required
@@ -137,11 +137,11 @@ export default function BookAppointmentSection() {
                       onChange={handleInputChange}
                       required
                     >
-                      <option value="" disabled>Hizmet Seçin</option>
-                      <option value="physiotherapy_rehabilitation">Fizyoterapi & Rehabilitasyon</option>
-                      <option value="sports_services">Sporcu Hizmetleri</option>
-                      <option value="womens_health_pilates">Kadın Sağlığı & Pilates</option>
-                      <option value="home_online_services">Evde & Online Hizmetler</option>
+                      <option value="" disabled>Select Service</option>
+                      <option value="physiotherapy_rehabilitation">Physiotherapy & Rehabilitation</option>
+                      <option value="sports_services">Sports Services</option>
+                      <option value="womens_health_pilates">Women's Health & Pilates</option>
+                      <option value="home_online_services">Home & Online Services</option>
                     </select>
                   </div>
 
@@ -158,7 +158,7 @@ export default function BookAppointmentSection() {
 
                   <div className="col-md-12">
                     <button type="submit" className="btn-default">
-                      <span>Mesaj Gönder</span>
+                      <span>Send Message</span>
                     </button>
                   </div>
                 </div>
@@ -177,7 +177,7 @@ export default function BookAppointmentSection() {
                 </div>
                 <div className="benefit-counter-content">
                   <h2><AnimatedCounter end={2} suffix="+" /></h2>
-                  <p>Yıl Deneyim</p>
+                  <p>Years Experience</p>
                 </div>
               </div>
               {/* Benefit Counter Item End */}
@@ -189,7 +189,7 @@ export default function BookAppointmentSection() {
                 </div>
                 <div className="benefit-counter-content">
                   <h2><AnimatedCounter end={300} suffix="+" /></h2>
-                  <p>Mutlu Hasta</p>
+                  <p>Happy Patients</p>
                 </div>
               </div>
               {/* Benefit Counter Item End */}
@@ -201,7 +201,7 @@ export default function BookAppointmentSection() {
                 </div>
                 <div className="benefit-counter-content">
                   <h2><AnimatedCounter end={100} suffix="%" /></h2>
-                  <p>Hasta Memnuniyeti</p>
+                  <p>Patient Satisfaction</p>
                 </div>
               </div>
               {/* Benefit Counter Item End */}
@@ -213,7 +213,7 @@ export default function BookAppointmentSection() {
                 </div>
                 <div className="benefit-counter-content">
                   <h2><AnimatedCounter end={1} /></h2>
-                  <p>Uzman Terapist</p>
+                  <p>Expert Therapist</p>
                 </div>
               </div>
               {/* Benefit Counter Item End */}

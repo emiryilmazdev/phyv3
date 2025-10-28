@@ -27,15 +27,15 @@ export default function JoinUsSection() {
               {/* Section Title Start */}
               <div className="section-title">
                 <AnimatedDiv delay={0}>
-                  <h3>Bize Katılın</h3>
+                  <h3>Join Us</h3>
                 </AnimatedDiv>
                 <h2 className="text-anime-style-2" data-cursor="-opaque">
-                  İyileştirici dokunuş, bütüncül bakım, <span>kalıcı sağlık</span>
+                  Healing touch, holistic care, <span>lasting health</span>
                 </h2>
                 <AnimatedDiv delay={0.2}>
                   <p>
-                  Sadece tedavi değil - vücudu rahatlatmak, zihni yenilemek ve iç dengeyi 
-                    restore etmek için tasarlanmış kişiselleştirilmiş sağlık deneyimleri sunuyoruz.
+                    Not just treatment - we offer personalized health experiences designed to 
+                    relax the body, renew the mind and restore inner balance.
                   </p>
                 </AnimatedDiv>
               </div>
@@ -53,37 +53,37 @@ export default function JoinUsSection() {
                   </div>
                   <div>
                     <h3 className="join-us-title">
-                      Yardıma İhtiyacınız Var mı?
+                      Do You Need Help?
                     </h3>
                     <p className="join-us-subtitle">
-                      Size özel çözümler sunuyoruz
+                      We offer personalized solutions for you
                     </p>
                   </div>
                 </div>
 
                 {/* Description */}
                 <p className="join-us-description">
-                  Size özel hazırladığım tedavi planlarıyla sağlık hedeflerinize ulaşmanızda yanınızdayım.
-Kapsamlı fizyoterapi ve kişisel rehabilitasyon yaklaşımlarımla, doğal yöntemleri destekleyerek iyileşme sürecinizi hızlandırıyorum.
+                  I am here to help you reach your health goals with personalized treatment plans I prepare for you.
+                  With my comprehensive physiotherapy and personal rehabilitation approaches, I accelerate your healing process by supporting natural methods.
                 </p>
 
                 {/* Services List */}
                 <div style={{ marginBottom: '30px' }}>
                   <h4 className="join-us-services-title">
-                    Hizmetlerimiz
+                    Our Services
                   </h4>
                   <div className="join-us-services-list">
                     <div className="join-us-service-item">
                       <div className="join-us-service-icon">
                         <FiActivity size={16} style={{ color: '#ffffff' }} />
                       </div>
-                      Kapsamlı Fizyoterapi
+                      Comprehensive Physiotherapy
                     </div>
                     <div className="join-us-service-item">
                       <div className="join-us-service-icon">
                         <FiTarget size={16} style={{ color: '#ffffff' }} />
                       </div>
-                      Kişisel Rehabilitasyon
+                      Personal Rehabilitation
                     </div>
                   </div>
                 </div>
@@ -95,7 +95,7 @@ Kapsamlı fizyoterapi ve kişisel rehabilitasyon yaklaşımlarımla, doğal yön
                     href="/iletisim" 
                     className="btn-default join-us-contact-btn"
                   >
-                    Daha Fazla Öğren
+                    Learn More
                     <FiArrowRight size={18} />
                   </Link>
 
@@ -112,7 +112,7 @@ Kapsamlı fizyoterapi ve kişisel rehabilitasyon yaklaşımlarımla, doğal yön
                         WhatsApp
                       </div>
                       <div className="join-us-whatsapp-subtitle">
-                        Hızlı İletişim
+                        Quick Contact
                       </div>
                     </div>
                   </a>

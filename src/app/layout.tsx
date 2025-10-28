@@ -7,6 +7,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import GsapAnimations from '@/components/shared/GsapAnimations'
 import LenisScrolling from '@/components/shared/LenisScrolling'
 import Preloader from '@/components/shared/Preloader'
+import WhatsAppWidget from '@/components/ui/WhatsAppWidget'
 
 
 const plusJakartaSans = Plus_Jakarta_Sans({
@@ -33,25 +34,25 @@ export const viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://simalongun.com'),
   title: {
-    default: 'Şimal Ongun - Fizyoterapist & Rehabilitasyon Uzmanı',
-    template: '%s | Şimal Ongun Fizyoterapi'
+    default: 'Simal Ongun - Physiotherapist & Rehabilitation Specialist',
+    template: '%s | Simal Ongun Physiotherapy'
   },
-  description: 'Milton Keynes\'te uzman fizyoterapi hizmetleri. Kas-iskelet sistemi problemleri, spor yaralanmaları ve kronik ağrı tedavisinde profesyonel yaklaşım.',
+  description: 'Expert physiotherapy services in Milton Keynes. Professional approach to musculoskeletal problems, sports injuries and chronic pain treatment.',
   keywords: [
-    'fizyoterapi',
-    'rehabilitasyon', 
+    'physiotherapy',
+    'rehabilitation', 
     'Milton Keynes',
-    'spor yaralanmaları',
-    'kas-iskelet sistemi',
-    'ağrı tedavisi',
-    'fizyoterapist',
-    'Şimal Ongun',
-    'UK fizyoterapi',
-    'İngiltere rehabilitasyon'
+    'sports injuries',
+    'musculoskeletal system',
+    'pain treatment',
+    'physiotherapist',
+    'Simal Ongun',
+    'UK physiotherapy',
+    'England rehabilitation'
   ],
-  authors: [{ name: 'Şimal Ongun', url: 'https://simalongun.com' }],
-  creator: 'Şimal Ongun',
-  publisher: 'Şimal Ongun Fizyoterapi',
+  authors: [{ name: 'Simal Ongun', url: 'https://simalongun.com' }],
+  creator: 'Simal Ongun',
+  publisher: 'Simal Ongun Physiotherapy',
   formatDetection: {
     email: false,
     address: false,
@@ -71,16 +72,16 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: 'website',
-    locale: 'tr_TR',
+    locale: 'en_GB',
     url: 'https://simalongun.com',
-    title: 'Şimal Ongun - Fizyoterapist & Rehabilitasyon Uzmanı',
-    description: 'Milton Keynes\'te uzman fizyoterapi hizmetleri. Kas-iskelet sistemi problemleri, spor yaralanmaları ve kronik ağrı tedavisinde profesyonel yaklaşım.',
-    siteName: 'Şimal Ongun Fizyoterapi',
+    title: 'Simal Ongun - Physiotherapist & Rehabilitation Specialist',
+    description: 'Expert physiotherapy services in Milton Keynes. Professional approach to musculoskeletal problems, sports injuries and chronic pain treatment.',
+    siteName: 'Simal Ongun Physiotherapy',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Şimal Ongun - Fizyoterapist & Rehabilitasyon Uzmanı',
-    description: 'Milton Keynes\'te uzman fizyoterapi hizmetleri.',
+    title: 'Simal Ongun - Physiotherapist & Rehabilitation Specialist',
+    description: 'Expert physiotherapy services in Milton Keynes.',
   },
   verification: {
     google: 'G-0NQ025S2FX',
@@ -102,7 +103,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="tr">
+    <html lang="en">
       <head>
         <link href="/css/custom.css" rel="stylesheet" media="screen" />
 
@@ -119,10 +120,23 @@ export default function RootLayout({
             gtag('config', 'G-0NQ025S2FX');
           `}
         </Script>
+
+        {/* Umami Analytics */}
+        <Script
+          src="https://cloud.umami.is/script.js"
+          data-website-id="d1f181dd-9abf-44e2-9f0f-694f1cda229b"
+          strategy="afterInteractive"
+        />
       </head>
       <body className={`${plusJakartaSans.variable} ${lora.variable}`}>
         <Preloader />
         {children}
+
+        {/* WhatsApp Widget - Sağ altta sabit */}
+        <WhatsAppWidget 
+          phoneNumber="+447123456789"
+          message="Merhaba! Fizyoterapi hizmetleri hakkında bilgi almak istiyorum."
+        />
 
         {/* GSAP Animations - Now using npm version */}
         <GsapAnimations />

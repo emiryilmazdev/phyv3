@@ -15,15 +15,15 @@ export default function WhatWeDoSection() {
                 {/* Section Title Start */}
                 <div className="section-title">
                   <AnimatedDiv delay={0}>
-                    <h3>Neler Yapıyoruz</h3>
+                    <h3>What We Do</h3>
                   </AnimatedDiv>
                   <h2 className="text-anime-style-2" data-cursor="-opaque">
-                    Sizin için özenle tasarlanmış <span>mükemmel konfor</span>
+                    Carefully designed <span>perfect comfort</span> for you
                   </h2>
                   <AnimatedDiv delay={0.2}>
                     <p>
-                      Fizyoterapi kliniğimizin her detayını rahatlığınızı artırmak ve en iyi bakımı sunmak için tasarladık.
-                      Huzur verici atmosferden profesyonel hizmete kadar.
+                      We designed every detail of our physiotherapy clinic to enhance your comfort and provide the best care.
+                      From a peaceful atmosphere to professional service.
                     </p>
                   </AnimatedDiv>
                 </div>
@@ -32,7 +32,7 @@ export default function WhatWeDoSection() {
                 {/* What We Do Button Start */}
                 <AnimatedDiv className="what-we-do-btn" delay={0.4}>
                   <Link href="/iletisim" className="btn-default">
-                    İletişime Geç
+                    Get In Touch
                   </Link>
                 </AnimatedDiv>
                 {/* What We Do Button End */}
@@ -49,8 +49,8 @@ export default function WhatWeDoSection() {
                     <FiActivity size={32} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Huzurlu Ortam</h3>
-                    <p>Kendinizi rahat hissedebileceğiniz, sakin ve huzurlu bir atmosferde tedavi sürecinizi gerçekleştiriyorum.</p>
+                    <h3>Peaceful Environment</h3>
+                    <p>I conduct your treatment process in a calm and peaceful atmosphere where you can feel comfortable.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -61,8 +61,8 @@ export default function WhatWeDoSection() {
                     <FiAward size={32} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Uzman Dokunuş</h3>
-                    <p>Fizyoterapi alanındaki eğitimim ve deneyimimle, size en uygun profesyonel desteği sunuyorum.</p>
+                    <h3>Expert Touch</h3>
+                    <p>With my education and experience in physiotherapy, I provide you with the most suitable professional support.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -73,8 +73,8 @@ export default function WhatWeDoSection() {
                     <FiHeart size={32} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Doğal & Fitoterapi Uyumlu Ürünler</h3>
-                    <p>Uygulamalarımda yalnızca vücut dostu, doğal ve fitoterapiye uygun ürünler kullanıyorum. Doğal içeriklerle sağlığınızı korumayı ve desteklemeyi öncelik haline getiriyorum.</p>
+                    <h3>Natural & Phytotherapy Compatible Products</h3>
+                    <p>In my applications, I only use body-friendly, natural and phytotherapy-compatible products. I prioritize protecting and supporting your health with natural ingredients.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -85,8 +85,8 @@ export default function WhatWeDoSection() {
                     <FiUserCheck size={32} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Kişiye Özel Yaklaşım</h3>
-                    <p>Her bireyin ihtiyacı farklıdır. Tedavi planlarını tamamen size özel, kişisel hedeflerinize ve vücut yapınıza göre oluşturuyorum.</p>
+                    <h3>Personalized Approach</h3>
+                    <p>Every individual's needs are different. I create treatment plans completely tailored to you, according to your personal goals and body structure.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -97,8 +97,8 @@ export default function WhatWeDoSection() {
                     <FiZap size={32} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Hijyen ve Güven</h3>
-                    <p>Kullandığım tüm alanlar düzenli olarak sterilize edilir. Yüksek hijyen standartlarını koruyarak güvenli bir tedavi ortamı sunuyorum.</p>
+                    <h3>Hygiene and Safety</h3>
+                    <p>All areas I use are regularly sterilized. I provide a safe treatment environment by maintaining high hygiene standards.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -109,8 +109,8 @@ export default function WhatWeDoSection() {
                     <FiCalendar size={32} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Kolay Online Randevu</h3>
-                    <p>Uygun zamanınızı seçip, birkaç tıklamayla online randevunuzu kolayca oluşturabilirsiniz.</p>
+                    <h3>Easy Online Appointment</h3>
+                    <p>You can easily create your online appointment with just a few clicks by selecting your convenient time.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}

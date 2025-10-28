@@ -17,29 +17,29 @@ export default function Home() {
     <>
       <Header />
       <main>
-        <section id="anasayfa">
+        <section id="home">
           <HeroSection />
         </section>
-        <section id="hakkimda">
+        <section id="about">
           <AboutSection />
         </section>
-        <section id="hizmetler">
+        <section id="services">
           <ServicesSection />
         </section>
-        <section id="neler-yapiyoruz">
+        <section id="what-we-do">
           <WhatWeDoSection />
         </section>
 
-        <section id="randevu">
+        <section id="appointment">
           <BookAppointmentSection />
         </section>
-        <section id="sss">
+        <section id="faq">
           <FaqsSection />
         </section>
-        <section id="bize-katilin">
+        <section id="join-us">
           <JoinUsSection />
         </section>
-        <section id="yorumlar">
+        <section id="testimonials">
           <TestimonialsSection />
         </section>
         <section id="blog">

@@ -7,45 +7,45 @@ import { FaAngleLeft, FaAngleRight } from 'react-icons/fa'
 const blogPosts = [
   {
     id: 1,
-    title: 'Fizyoterapi ile Ağrı Yönetimi: Etkili Yöntemler',
+    title: 'Pain Management with Physiotherapy: Effective Methods',
     image: '/images/post-1.jpg',
-    excerpt: 'Kronik ağrı ile başa çıkmanın modern fizyoterapi yöntemleri ve günlük yaşamda uygulayabileceğiniz pratik çözümler.',
-    slug: 'fizyoterapi-ile-agri-yonetimi'
+    excerpt: 'Modern physiotherapy methods for dealing with chronic pain and practical solutions you can apply in daily life.',
+    slug: 'pain-management-with-physiotherapy'
   },
   {
     id: 2,
-    title: 'Spor Yaralanmalarından Korunma Rehberi',
+    title: 'Sports Injury Prevention Guide',
     image: '/images/post-2.jpg',
-    excerpt: 'Sporcular için yaralanma önleme stratejileri, doğru ısınma teknikleri ve performans artırıcı egzersizler.',
-    slug: 'spor-yaralanmalarindan-korunma'
+    excerpt: 'Injury prevention strategies for athletes, proper warm-up techniques and performance-enhancing exercises.',
+    slug: 'sports-injury-prevention-guide'
   },
   {
     id: 3,
-    title: 'Evde Yapabileceğiniz Rehabilitasyon Egzersizleri',
+    title: 'Rehabilitation Exercises You Can Do at Home',
     image: '/images/post-3.jpg',
-    excerpt: 'Günlük rutininize kolayca entegre edebileceğiniz, etkili rehabilitasyon egzersizleri ve doğru uygulama teknikleri.',
-    slug: 'evde-rehabilitasyon-egzersizleri'
+    excerpt: 'Effective rehabilitation exercises and proper application techniques that you can easily integrate into your daily routine.',
+    slug: 'home-rehabilitation-exercises'
   },
   {
     id: 4,
-    title: 'Kadın Sağlığında Fizyoterapinin Rolü',
+    title: 'The Role of Physiotherapy in Women\'s Health',
     image: '/images/post-1.jpg',
-    excerpt: 'Kadınların yaşam döngüsü boyunca karşılaştığı sağlık sorunlarında fizyoterapinin önemi ve çözüm önerileri.',
-    slug: 'kadin-sagliginda-fizyoterapi'
+    excerpt: 'The importance of physiotherapy in health problems women face throughout their life cycle and solution suggestions.',
+    slug: 'physiotherapy-in-womens-health'
   },
   {
     id: 5,
-    title: 'Postür Bozukluklarına Modern Yaklaşım',
+    title: 'Modern Approach to Posture Disorders',
     image: '/images/post-2.jpg',
-    excerpt: 'Masa başı çalışanlar için postür düzeltme teknikleri ve uzun vadeli sağlık için önemli ipuçları.',
-    slug: 'postur-bozukluklarina-modern-yaklasim'
+    excerpt: 'Posture correction techniques for desk workers and important tips for long-term health.',
+    slug: 'modern-approach-to-posture-disorders'
   },
   {
     id: 6,
-    title: 'Yaşlılarda Düşme Riskini Azaltma Stratejileri',
+    title: 'Fall Risk Reduction Strategies in the Elderly',
     image: '/images/post-3.jpg',
-    excerpt: 'Yaşlı bireylerde denge ve koordinasyon geliştirme egzersizleri ile düşme riskini minimize etme yöntemleri.',
-    slug: 'yaslilik-dusme-riski-azaltma'
+    excerpt: 'Methods to minimize fall risk with balance and coordination development exercises in elderly individuals.',
+    slug: 'fall-risk-reduction-strategies-elderly'
   }
 ]
 
@@ -61,12 +61,12 @@ export default function BlogPage() {
             <div className="col-lg-12">
               <div className="page-header-box">
                 <h1 className="text-anime-style-2" data-cursor="-opaque">
-                  Sağlık <span>Blogu</span>
+                  Health <span>Blog</span>
                 </h1>
                 <nav className="wow fadeInUp">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <Link href="/">Ana Sayfa</Link>
+                      <Link href="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Blog
@@ -118,7 +118,7 @@ export default function BlogPage() {
                     {/* Post Item Readmore Button Start */}
                     <div className="post-item-btn">
                       <Link href={`/blog/${post.slug}`} className="readmore-btn">
-                        Devamını Oku
+                        Read More
                       </Link>
                     </div>
                     {/* Post Item Readmore Button End */}
@@ -133,7 +133,7 @@ export default function BlogPage() {
               <div className="page-pagination wow fadeInUp" data-wow-delay="1.2s">
                 <ul className="pagination">
                   <li>
-                    <a href="#" aria-label="Önceki">
+                    <a href="#" aria-label="Previous">
                       <FaAngleLeft />
                     </a>
                   </li>
@@ -147,7 +147,7 @@ export default function BlogPage() {
                     <a href="#">3</a>
                   </li>
                   <li>
-                    <a href="#" aria-label="Sonraki">
+                    <a href="#" aria-label="Next">
                       <FaAngleRight />
                     </a>
                   </li>

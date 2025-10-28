@@ -30,7 +30,7 @@ export default function Header() {
           <div className="container-fluid">
             {/* Logo Start */}
             <Link className="navbar-brand" href="/">
-              <Image src="/images/logo.png" alt="Şimal Ongun Logo" width={180} height={60} />
+              <Image src="/images/logo.png" alt="Simal Ongun Logo" width={180} height={60} />
             </Link>
             {/* Logo End */}
 
@@ -39,30 +39,30 @@ export default function Header() {
               <div className="nav-menu-wrapper">
                 <ul className="navbar-nav mr-auto" id="menu">
                   <li className="nav-item">
-                    <Link className="nav-link" href="/">Ana Sayfa</Link>
+                    <Link className="nav-link" href="/">Home</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/hakkimda">Hakkımda</Link>
+                    <Link className="nav-link" href="/about">About</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/hizmetler">Hizmetler</Link>
+                    <Link className="nav-link" href="/services">Services</Link>
                   </li>
                   <li className="nav-item">
                     <Link className="nav-link" href="/blog">Blog</Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link" href="/iletisim">İletişim</Link>
+                    <Link className="nav-link" href="/contact">Contact</Link>
                   </li>
                   <li className="nav-item highlighted-menu">
-                    <Link className="nav-link" href="/iletisim">İletişime Geç</Link>
+                    <Link className="nav-link" href="/contact">Get In Touch</Link>
                   </li>
                 </ul>
               </div>
 
               {/* Header Btn Start */}
               <div className="header-btn">
-                <Link href="/iletisim" className="btn-default btn-highlighted">
-                  İletişime Geç
+                <Link href="/contact" className="btn-default btn-highlighted">
+                  Get In Touch
                 </Link>
               </div>
               {/* Header Btn End */}
@@ -90,17 +90,17 @@ export default function Header() {
           <ul className="mobile-menu-list">
             <li className="mobile-menu-item">
               <Link href="/" onClick={() => setMobileMenuOpen(false)}>
-                Ana Sayfa
+                Home
               </Link>
             </li>
             <li className="mobile-menu-item">
-              <Link href="/hakkimda" onClick={() => setMobileMenuOpen(false)}>
-                Hakkımda
+              <Link href="/about" onClick={() => setMobileMenuOpen(false)}>
+                About
               </Link>
             </li>
             <li className="mobile-menu-item">
-              <Link href="/hizmetler" onClick={() => setMobileMenuOpen(false)}>
-                Hizmetler
+              <Link href="/services" onClick={() => setMobileMenuOpen(false)}>
+                Services
               </Link>
             </li>
             <li className="mobile-menu-item">
@@ -109,13 +109,13 @@ export default function Header() {
               </Link>
             </li>
             <li className="mobile-menu-item">
-              <Link href="/iletisim" onClick={() => setMobileMenuOpen(false)}>
-                İletişim
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                Contact
               </Link>
             </li>
             <li className="mobile-menu-item mobile-menu-cta">
-              <Link href="/iletisim" onClick={() => setMobileMenuOpen(false)}>
-                İletişime Geç
+              <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                Get In Touch
               </Link>
             </li>
           </ul>

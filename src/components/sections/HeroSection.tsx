@@ -17,24 +17,24 @@ export default function HeroSection() {
               <div className="hero-content">
                 {/* Section Title Start */}
                 <div className="section-title">
-                  <h3>Milton Keynes'te Uzman Fizyoterapi</h3>
+                  <h3>Expert Physiotherapy in Milton Keynes</h3>
                   <h1 className="text-anime-style-2" data-cursor="-opaque">
-                    Hareket kabiliyetinizi geri kazanın, <span>ağrılarınızdan kurtulun</span>
+                    Regain your mobility, <span>get rid of your pain</span>
                   </h1>
                   <p>
-                    Şimal Ongun ile birlikte, kanıta dayalı fizyoterapi yöntemleriyle sağlığınızı geri kazanın. 
-                    Kas-iskelet sistemi problemleri, spor yaralanmaları ve kronik ağrı tedavisinde uzman yaklaşım.
+                    Together with Simal Ongun, regain your health with evidence-based physiotherapy methods. 
+                    Expert approach in musculoskeletal problems, sports injuries and chronic pain treatment.
                   </p>
                 </div>
                 {/* Section Title End */}
 
                 {/* Hero Button Start */}
                 <div className="hero-btn">
-                  <Link href="/iletisim" className="btn-default btn-highlighted">
-                    İletişime Geç
+                  <Link href="/contact" className="btn-default btn-highlighted">
+                    Get In Touch
                   </Link>
-                  <Link href="/hizmetler" className="btn-default border-btn">
-                    Hizmetlerimiz
+                  <Link href="/services" className="btn-default border-btn">
+                    Our Services
                   </Link>
                 </div>
                 {/* Hero Button End */}
@@ -46,7 +46,7 @@ export default function HeroSection() {
               {/* Hero Image Start */}
               <div className="hero-img">
                 <figure>
-                  <Image src="/images/hero-image.png" alt="Şimal Ongun Fizyoterapist" width={600} height={500} />
+                  <Image src="/images/hero-image.png" alt="Simal Ongun Physiotherapist" width={600} height={500} />
                 </figure>
 
                 {/* Hero Rating Box Start */}

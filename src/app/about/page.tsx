@@ -20,12 +20,11 @@ import {
   FiClock
 } from 'react-icons/fi'
 import { FaInstagram, FaLinkedinIn } from 'react-icons/fa'
-import { useEffect, useState, useRef } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function AboutPage() {
   const [isVisible, setIsVisible] = useState(false)
   const [counters, setCounters] = useState({ years: 0, countries: 0, patients: 0 })
-  const statsRef = useRef(null)
 
   useEffect(() => {
     setIsVisible(true)
@@ -54,11 +53,8 @@ export default function AboutPage() {
       }, stepDuration)
     }
 
-    // Start animation after component mounts
     const timeout = setTimeout(animateCounters, 500)
-    return () => {
-      clearTimeout(timeout)
-    }
+    return () => clearTimeout(timeout)
   }, [])
 
   const fadeIn = {
@@ -81,15 +77,15 @@ export default function AboutPage() {
             <div className="col-lg-12">
               <div className="page-header-box">
                 <h1 className="text-anime-style-2" data-cursor="-opaque">
-                  Hakkımda <span>Şimal Ongun</span>
+                  About <span>Simal Ongun</span>
                 </h1>
                 <nav>
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <Link href="/">Ana Sayfa</Link>
+                      <Link href="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
-                      Hakkımda
+                      About
                     </li>
                   </ol>
                 </nav>
@@ -98,14 +94,12 @@ export default function AboutPage() {
           </div>
         </div>
       </div>
-      {/* Compact Main Content */}
-      <div className="about-page-container">
-        <div className="container" style={{
-          maxWidth: '1100px',
-          padding: '0 20px'
-        }}>
 
-          {/* Hero Section - Side by Side */}
+      {/* Main Content */}
+      <div className="about-page-container">
+        <div className="container" style={{ maxWidth: '1100px', padding: '0 20px' }}>
+
+          {/* Hero Section */}
           <motion.div
             className="about-hero-card"
             initial="hidden"
@@ -122,7 +116,7 @@ export default function AboutPage() {
                   <div className="about-profile-image">
                     <Image
                       src="/images/simbo.png"
-                      alt="Şimal Ongun"
+                      alt="Simal Ongun"
                       width={120}
                       height={120}
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
@@ -138,7 +132,7 @@ export default function AboutPage() {
                     marginBottom: '4px',
                     fontWeight: '600'
                   }}>
-                    Şimal Ongun
+                    Simal Ongun
                   </h2>
 
                   <p style={{
@@ -216,7 +210,7 @@ export default function AboutPage() {
                     letterSpacing: '0.5px'
                   }}
                 >
-                  Profesyonel Fizyoterapist
+                  Professional Physiotherapist
                 </div>
 
                 <h1 style={{
@@ -226,7 +220,7 @@ export default function AboutPage() {
                   lineHeight: '1.2',
                   marginBottom: '15px'
                 }}>
-                  Milton Keynes'te <span style={{ color: '#8E714F' }}>Fizyoterapi</span> Uzmanı
+                  <span style={{ color: '#8E714F' }}>Physiotherapy</span> Specialist in Milton Keynes
                 </h1>
 
                 <p style={{
@@ -235,8 +229,8 @@ export default function AboutPage() {
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
-                  Dört farklı ülkede edindiğim uluslararası deneyimle, ortopedi ve rehabilitasyon alanında uzmanlaşmış bir fizyoterapistim.
-                  Şu anda özel bir hastanede görev yaparak kas-iskelet sistemi rahatsızlıkları üzerine çalışmalarıma devam ediyorum.
+                  I am a physiotherapist specialized in orthopedics and rehabilitation with international experience gained in four different countries.
+                  I currently work at a private hospital and continue my work on musculoskeletal disorders.
                 </p>
 
                 <div style={{ display: 'flex', gap: '10px', marginBottom: '0', flexWrap: 'wrap' }}>
@@ -244,7 +238,7 @@ export default function AboutPage() {
                     whileHover={{ scale: 1.05, y: -1 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <Link href="/iletisim" style={{
+                    <Link href="/contact" style={{
                       background: 'linear-gradient(135deg, #8E714F 0%, #7A6142 100%)',
                       color: '#ffffff',
                       padding: '8px 16px',
@@ -259,7 +253,7 @@ export default function AboutPage() {
                       transition: 'all 0.2s ease'
                     }}>
                       <FiPhone size={12} />
-                      İletişime Geç
+                      Get In Touch
                     </Link>
                   </motion.div>
 
@@ -267,7 +261,7 @@ export default function AboutPage() {
                     whileHover={{ scale: 1.05, y: -1 }}
                     whileTap={{ scale: 0.98 }}
                   >
-                    <Link href="/hizmetler" style={{
+                    <Link href="/services" style={{
                       background: 'transparent',
                       color: '#8E714F',
                       padding: '8px 16px',
@@ -282,7 +276,7 @@ export default function AboutPage() {
                       transition: 'all 0.2s ease'
                     }}>
                       <FiBriefcase size={12} />
-                      Hizmetlerim
+                      My Services
                     </Link>
                   </motion.div>
                 </div>
@@ -295,9 +289,9 @@ export default function AboutPage() {
                   gap: '12px'
                 }}>
                   {[
-                    { value: `${counters.years}+`, label: 'Yıl Deneyim', icon: FiClock },
-                    { value: `${counters.countries}`, label: 'Ülke', icon: FiGlobe },
-                    { value: `${counters.patients}+`, label: 'Mutlu Hasta', icon: FiUsers }
+                    { value: `${counters.years}+`, label: 'Years Experience', icon: FiClock },
+                    { value: `${counters.countries}`, label: 'Countries', icon: FiGlobe },
+                    { value: `${counters.patients}+`, label: 'Happy Patients', icon: FiUsers }
                   ].map((stat, index) => (
                     <div key={index} style={{
                       display: 'flex',
@@ -356,9 +350,9 @@ export default function AboutPage() {
               </div>
             </div>
           </motion.div>
+
           {/* Two Column Layout - Story & Values */}
           <div className="row" style={{ marginBottom: '40px' }}>
-
             {/* My Story */}
             <div className="col-lg-6">
               <motion.div
@@ -379,7 +373,7 @@ export default function AboutPage() {
                   fontWeight: '600',
                   marginBottom: '20px'
                 }}>
-                  Benim <span style={{ color: '#8E714F' }}>Hikayem</span>
+                  My <span style={{ color: '#8E714F' }}>Story</span>
                 </h2>
 
                 <p style={{
@@ -388,10 +382,8 @@ export default function AboutPage() {
                   lineHeight: '1.6',
                   marginBottom: '15px'
                 }}>
-                  Fizyoterapi alanındaki yolculuğum, insanlara hareket özgürlüklerini geri kazandırma ve yaşam kalitelerini artırma tutkumla başladı.
-                  Lisans eğitimimin ardından farklı ülkelerde edindiğim deneyimler sayesinde ortopedi, rehabilitasyon ve özel popülasyonlara yönelik fizyoterapi alanlarında uzmanlaştım.
-                  Şu anda Milton Keynes’te özel bir hastanede görev yapıyor, kas-iskelet sistemi rahatsızlıklarının tedavisi ve sağlıklı yaşlanma üzerine çalışmalarıma devam ediyorum.
-                  Benim için fizyoterapi yalnızca bir meslek değil; insanlara umut verme, onları yeniden hayata bağlama yolculuğudur.
+                  My journey in physiotherapy began with a passion for helping people regain their freedom of movement and improve their quality of life.
+                  After my undergraduate education, I specialized in orthopedics, rehabilitation and physiotherapy for special populations through experiences gained in different countries.
                 </p>
 
                 <p style={{
@@ -400,8 +392,8 @@ export default function AboutPage() {
                   lineHeight: '1.6',
                   marginBottom: '15px'
                 }}>
-                  Şu anda Milton Keynes'te Bupa Hospitals'ta çalışıyorum. Her gün, hastaların
-                  ağrılarını azaltmak ve yaşam kalitelerini artırmak için elimden geleni yapıyorum.
+                  I currently work at Bupa Hospitals in Milton Keynes, continuing my work on the treatment of musculoskeletal disorders and healthy aging.
+                  Every day, I do my best to reduce patients' pain and improve their quality of life.
                 </p>
 
                 <p style={{
@@ -410,8 +402,8 @@ export default function AboutPage() {
                   lineHeight: '1.6',
                   marginBottom: 0
                 }}>
-                  Benim için fizyoterapi sadece bir meslek değil, insanlara umut verme
-                  ve onların hayatlarına dokunma fırsatı.
+                  For me, physiotherapy is not just a profession, but an opportunity to give hope to people
+                  and touch their lives.
                 </p>
               </motion.div>
             </div>
@@ -436,30 +428,30 @@ export default function AboutPage() {
                   fontWeight: '600',
                   marginBottom: '20px'
                 }}>
-                  Değerlerim & <span style={{ color: '#8E714F' }}>Yaklaşımım</span>
+                  My Values & <span style={{ color: '#8E714F' }}>Approach</span>
                 </h2>
 
                 <div style={{ display: 'grid', gap: '15px' }}>
                   {[
                     {
                       icon: FiHeart,
-                      title: 'Empati & Anlayış',
-                      description: 'Her hastanın hikayesini dinler, ağrısını anlamaya çalışırım'
+                      title: 'Empathy & Understanding',
+                      description: 'I listen to each patient\'s story and try to understand their pain'
                     },
                     {
                       icon: FiTarget,
-                      title: 'Hedef Odaklı Tedavi',
-                      description: 'Sizin hedefleriniz doğrultusunda kişisel tedavi planları'
+                      title: 'Goal-Oriented Treatment',
+                      description: 'Personalized treatment plans in line with your goals'
                     },
                     {
                       icon: FiStar,
-                      title: 'Kalite & Mükemmellik',
-                      description: 'En güncel yöntemlerle, en iyi sonuçları elde etmeye odaklanırım'
+                      title: 'Quality & Excellence',
+                      description: 'I focus on achieving the best results with the most up-to-date methods'
                     },
                     {
                       icon: FiTrendingUp,
-                      title: 'Sürekli Gelişim',
-                      description: 'Kendimi sürekli geliştirerek size daha iyi hizmet sunuyorum'
+                      title: 'Continuous Development',
+                      description: 'I continuously improve myself to provide you with better service'
                     }
                   ].map((item, index) => (
                     <div
@@ -511,9 +503,8 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Professional Journey & Contact - Horizontal Layout */}
+          {/* Professional Journey & Contact */}
           <div className="row">
-
             {/* Professional Journey */}
             <div className="col-lg-8">
               <motion.div
@@ -535,34 +526,34 @@ export default function AboutPage() {
                   fontWeight: '600',
                   marginBottom: '25px'
                 }}>
-                  Profesyonel <span style={{ color: '#8E714F' }}>Yolculuğum</span>
+                  Professional <span style={{ color: '#8E714F' }}>Journey</span>
                 </h2>
 
                 <div style={{ display: 'grid', gap: '20px' }}>
                   {[
                     {
-                      year: '2025 – Günümüz',
+                      year: '2025 – Present',
                       title: 'MSK Assistant & Health Advisor',
-                      company: 'Özel Hastane, Milton Keynes, Birleşik Krallık',
-                      description: 'Kas-iskelet sistemi değerlendirmeleri, rehabilitasyon planlaması ve yaşam tarzı danışmanlığı üzerine çalışıyorum. Multidisipliner ekiplerle iş birliği içinde, hastaların iyileşme süreçlerini destekliyorum.'
+                      company: 'Private Hospital, Milton Keynes, United Kingdom',
+                      description: 'I work on musculoskeletal system assessments, rehabilitation planning and lifestyle counseling. I support patients\' recovery processes in collaboration with multidisciplinary teams.'
                     },
                     {
                       year: '2020 – 2024',
-                      title: 'Fizyoterapist',
-                      company: 'Çeşitli Klinikler ve Spor Merkezleri (Türkiye, Hollanda, Litvanya)',
-                      description: 'Ortopedi, sporcu sağlığı, geriatri ve nörolojik rehabilitasyon alanlarında uluslararası deneyim kazandım. Farklı ülkelerdeki hasta bakım yaklaşımlarını gözlemleyerek bütüncül bir tedavi perspektifi geliştirdim.'
+                      title: 'Physiotherapist',
+                      company: 'Various Clinics and Sports Centers (Turkey, Netherlands, Lithuania)',
+                      description: 'I gained international experience in orthopedics, athlete health, geriatrics and neurological rehabilitation. I developed a holistic treatment perspective by observing patient care approaches in different countries.'
                     },
                     {
                       year: '🎓 2023 – 2024',
-                      title: 'Yüksek Lisans (MSc) – Exercise & Physical Activity for Special Populations and Healthy Ageing',
-                      company: 'Middlesex University, Londra — Onur Derecesiyle Mezuniyet',
-                      description: 'Sağlıklı yaşlanma, özel popülasyonlarda egzersiz planlaması ve rehabilitasyon üzerine uzmanlaştım.'
+                      title: 'Master\'s Degree (MSc) – Exercise & Physical Activity for Special Populations and Healthy Ageing',
+                      company: 'Middlesex University, London — Graduated with Honours',
+                      description: 'I specialized in healthy aging, exercise planning and rehabilitation in special populations.'
                     },
                     {
                       year: '🎓 2018 – 2022',
-                      title: 'Fizyoterapi ve Rehabilitasyon Lisansı (BSc Hons)',
-                      company: 'Bezmialem Vakıf Üniversitesi, İstanbul — Onur Derecesiyle Mezuniyet',
-                      description: 'Erasmus programı kapsamında Kauno Kolegija, Litvanya\'da eğitim aldım. Ortopedik ve nörolojik rehabilitasyon alanlarında yoğun klinik uygulama deneyimi kazandım.'
+                      title: 'Physiotherapy and Rehabilitation Bachelor\'s Degree (BSc Hons)',
+                      company: 'Bezmialem Vakıf University, Istanbul — Graduated with Honours',
+                      description: 'I studied at Kauno Kolegija, Lithuania within the scope of the Erasmus program. I gained intensive clinical practice experience in orthopedic and neurological rehabilitation.'
                     }
                   ].map((item, index) => (
                     <div
@@ -651,15 +642,15 @@ export default function AboutPage() {
                   fontWeight: '600',
                   marginBottom: '20px'
                 }}>
-                  Bana <span style={{ color: '#8E714F' }}>Ulaşın</span>
+                  Contact <span style={{ color: '#8E714F' }}>Me</span>
                 </h2>
 
                 <div style={{ display: 'grid', gap: '12px' }}>
                   {[
-                    { icon: FiPhone, label: 'Telefon', value: '+44 7709572412', link: 'tel:+447709572412' },
-                    { icon: FiMail, label: 'E-posta', value: 'simalongun22@gmail.com', link: 'mailto:simalongun22@gmail.com' },
-                    { icon: FiMapPin, label: 'Konum', value: 'Milton Keynes, UK', link: '#' },
-                    { icon: FiGlobe, label: 'Deneyim', value: '4 Ülke', link: '#' }
+                    { icon: FiPhone, label: 'Phone', value: '+44 7709572412', link: 'tel:+447709572412' },
+                    { icon: FiMail, label: 'Email', value: 'simalongun22@gmail.com', link: 'mailto:simalongun22@gmail.com' },
+                    { icon: FiMapPin, label: 'Location', value: 'Milton Keynes, UK', link: '#' },
+                    { icon: FiGlobe, label: 'Experience', value: '4 Countries', link: '#' }
                   ].map((item, index) => (
                     <a
                       key={index}
@@ -735,7 +726,7 @@ export default function AboutPage() {
               fontWeight: '600',
               marginBottom: '10px'
             }}>
-              Sağlığınız İçin <span style={{ color: '#EFE7DA' }}>Buradayım</span>
+              I'm Here For <span style={{ color: '#EFE7DA' }}>Your Health</span>
             </h2>
 
             <p style={{
@@ -743,7 +734,7 @@ export default function AboutPage() {
               fontSize: '0.9rem',
               marginBottom: '20px'
             }}>
-              Profesyonel fizyoterapi hizmetleri ile sağlığınızı geri kazanın.
+              Regain your health with professional physiotherapy services.
             </p>
 
             <div style={{
@@ -756,7 +747,7 @@ export default function AboutPage() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Link href="/iletisim" style={{
+                <Link href="/contact" style={{
                   background: 'linear-gradient(135deg, #ffffff 0%, #f5f5f5 100%)',
                   color: '#5A5044',
                   padding: '10px 20px',
@@ -771,7 +762,7 @@ export default function AboutPage() {
                   transition: 'all 0.2s ease'
                 }}>
                   <FiPhone size={12} />
-                  İletişime Geç
+                  Get In Touch
                 </Link>
               </motion.div>
 
@@ -779,7 +770,7 @@ export default function AboutPage() {
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.98 }}
               >
-                <Link href="/hizmetler" style={{
+                <Link href="/services" style={{
                   background: 'rgba(247, 243, 237, 0.1)',
                   color: '#ffffff',
                   padding: '10px 20px',
@@ -795,7 +786,7 @@ export default function AboutPage() {
                   transition: 'all 0.2s ease'
                 }}>
                   <FiBriefcase size={12} />
-                  Hizmetlerim
+                  My Services
                 </Link>
               </motion.div>
             </div>

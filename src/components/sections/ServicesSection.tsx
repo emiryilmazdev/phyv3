@@ -19,41 +19,41 @@ const services = [
   {
     id: 1,
     icon: MdHealthAndSafety,
-    title: 'Post op Fizyoterapi &Rehabilitation',
-    description: 'Ameliyat sonrası ve kas-iskelet sistemi problemlerinde profesyonel rehabilitasyon desteği.',
-    features: ['Post-operatif rehabilitasyon', 'Kas-iskelet sistemi tedavisi', 'Ağrı yönetimi'],
+    title: 'Post-op Physiotherapy & Rehabilitation',
+    description: 'Professional rehabilitation support for post-surgical and musculoskeletal system problems.',
+    features: ['Post-operative rehabilitation', 'Musculoskeletal system treatment', 'Pain management'],
     price: '£65',
-    duration: '45-60 dk',
+    duration: '45-60 min',
     color: '#8E714F'
   },
   {
     id: 2,
     icon: MdSportsGymnastics,
-    title: 'Sporcu Hizmetleri',
-    description: 'Sporcular için performans, iyileşme ve sakatlık önleme odaklı profesyonel destek.',
-    features: ['Spor yaralanmaları rehabilitasyonu', 'Performans artırıcı egzersizler', 'Spor masajı'],
+    title: 'Sports Services',
+    description: 'Professional support focused on performance, recovery and injury prevention for athletes.',
+    features: ['Sports injury rehabilitation', 'Performance enhancing exercises', 'Sports massage'],
     price: '£45',
-    duration: '30-45 dk',
+    duration: '30-45 min',
     color: '#636A55'
   },
   {
     id: 3,
     icon: MdPregnantWoman,
-    title: 'Kadın Sağlığı & Pilates',
-    description: 'Kadınlara özel, dönemsel ve yaşam evresine uygun hareket terapileri.',
-    features: ['Prenatal fizyoterapi', 'Postpartum rehabilitasyon', 'Regl ağrısı tedavisi'],
+    title: 'Women\'s Health & Pilates',
+    description: 'Movement therapies specific to women, periodic and appropriate to life stages.',
+    features: ['Prenatal physiotherapy', 'Postpartum rehabilitation', 'Menstrual pain treatment'],
     price: '£50',
-    duration: '45 dk',
+    duration: '45 min',
     color: '#5A5044'
   },
   {
     id: 4,
     icon: MdLaptop,
-    title: 'Online & Evde Hizmetler',
-    description: 'Kişiye özel, erişilebilir ve esnek seans seçenekleri.',
-    features: ['Online fizyoterapi danışmanlığı', 'Evde fizyoterapi seansları', 'Video egzersiz programları'],
+    title: 'Online & Home Services',
+    description: 'Personalized, accessible and flexible session options.',
+    features: ['Online physiotherapy consultation', 'Home physiotherapy sessions', 'Video exercise programs'],
     price: '£40',
-    duration: '30-45 dk',
+    duration: '30-45 min',
     color: '#8E714F'
   }
 ]
@@ -109,7 +109,7 @@ export default function ServicesSection() {
               letterSpacing: '0.5px'
             }}
           >
-            Hizmetlerimiz
+            Our Services
           </motion.div>
           
           <h2 style={{ 
@@ -118,7 +118,7 @@ export default function ServicesSection() {
             fontWeight: '700',
             marginBottom: '20px'
           }}>
-            Profesyonel Fizyoterapi Hizmetleri ile <span style={{ color: '#EFE7DA' }}>Sağlığınızı Geri Kazanın</span>
+            Regain Your Health with <span style={{ color: '#EFE7DA' }}>Professional Physiotherapy Services</span>
           </h2>
           
           <p style={{ 
@@ -129,8 +129,8 @@ export default function ServicesSection() {
             lineHeight: '1.7',
             opacity: '0.9'
           }}>
-            Milton Keynes'te sunduğum kapsamlı fizyoterapi hizmetleri ile sağlığınızı geri kazanın. 
-            Her hastamın benzersiz ihtiyaçlarına uygun, kanıta dayalı tedavi yöntemleri uyguluyorum.
+            Regain your health with comprehensive physiotherapy services I offer in Milton Keynes. 
+            I apply evidence-based treatment methods suitable for each patient's unique needs.
           </p>
         </motion.div>
 
@@ -142,7 +142,7 @@ export default function ServicesSection() {
           animate={isVisible ? "visible" : "hidden"}
           variants={stagger}
         >
-          {services.map((service, index) => (
+          {services.map((service) => (
             <div key={service.id} className="col-lg-3 col-md-6" style={{ marginBottom: '30px' }}>
               <motion.div
                 style={{
@@ -282,7 +282,7 @@ export default function ServicesSection() {
                   </div>
                   
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                    <Link href="/hizmetler" style={{
+                    <Link href="/services" style={{
                       background: service.color,
                       color: '#ffffff',
                       padding: '8px 12px',
@@ -294,7 +294,7 @@ export default function ServicesSection() {
                       alignItems: 'center',
                       gap: '4px'
                     }}>
-                      Detay
+                      Details
                       <FiArrowRight size={10} />
                     </Link>
                   </motion.div>
@@ -322,7 +322,7 @@ export default function ServicesSection() {
             fontWeight: '700', 
             marginBottom: '15px'
           }}>
-            Sağlığınızı Geri Kazanmaya <span style={{ color: '#EFE7DA' }}>Bugün Başlayın</span>
+            Start Regaining Your Health <span style={{ color: '#EFE7DA' }}>Today</span>
           </h3>
           
           <p style={{ 
@@ -332,8 +332,8 @@ export default function ServicesSection() {
             maxWidth: '500px',
             margin: '0 auto 25px'
           }}>
-            Ücretsiz değerlendirme randevunuz için benimle iletişime geçin. 
-            Size en uygun tedavi planını birlikte belirleyelim.
+            Contact me for your free assessment appointment. 
+            Let's determine the most suitable treatment plan for you together.
           </p>
           
           <div style={{ 
@@ -343,7 +343,7 @@ export default function ServicesSection() {
             flexWrap: 'wrap'
           }}>
             <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-              <Link href="/iletisim" style={{
+              <Link href="/contact" style={{
                 background: '#F7F3ED', 
                 color: '#5A5044', 
                 padding: '12px 24px',
@@ -356,13 +356,13 @@ export default function ServicesSection() {
                 gap: '8px',
                 boxShadow: '0 4px 15px rgba(0,0,0,0.2)'
               }}>
-                Ücretsiz Değerlendirme
+                Free Assessment
                 <FiArrowRight size={14} />
               </Link>
             </motion.div>
             
             <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.95 }}>
-              <Link href="/hizmetler" style={{
+              <Link href="/services" style={{
                 background: 'transparent', 
                 color: '#F7F3ED', 
                 padding: '12px 24px',
@@ -375,7 +375,7 @@ export default function ServicesSection() {
                 alignItems: 'center', 
                 gap: '8px'
               }}>
-                Tüm Hizmetler
+                All Services
                 <FiArrowRight size={14} />
               </Link>
             </motion.div>

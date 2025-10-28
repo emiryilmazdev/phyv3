@@ -12,7 +12,7 @@ const blogPosts = {
     title: 'Fizyoterapi ile Ağrı Yönetimi: Etkili Yöntemler',
     image: '/images/post-1.jpg',
     date: '15 Ocak, 2025',
-    author: 'Şimal Ongun',
+    author: 'Simal Ongun',
     content: `
       <p>Kronik ağrı, günümüzde milyonlarca insanı etkileyen önemli bir sağlık sorunudur. Fizyoterapi, ağrı yönetiminde ilaçsız ve etkili çözümler sunan bir tedavi yöntemidir.</p>
       
@@ -38,7 +38,7 @@ const blogPosts = {
     title: 'Spor Yaralanmalarından Korunma Rehberi',
     image: '/images/post-2.jpg',
     date: '12 Ocak, 2025',
-    author: 'Şimal Ongun',
+    author: 'Simal Ongun',
     content: `
       <p>Spor yaralanmaları, aktif yaşam tarzını benimseyen bireyler için önemli bir risk faktörüdür. Doğru önlemler alarak bu riskleri önemli ölçüde azaltmak mümkündür.</p>
       
@@ -64,7 +64,7 @@ const blogPosts = {
     title: 'Evde Yapabileceğiniz Rehabilitasyon Egzersizleri',
     image: '/images/post-3.jpg',
     date: '10 Ocak, 2025',
-    author: 'Şimal Ongun',
+    author: 'Simal Ongun',
     content: `
       <p>Evde yapılan rehabilitasyon egzersizleri, tedavi sürecinin ayrılmaz bir parçasıdır. Doğru uygulanan ev programları, klinik tedavilerin etkinliğini artırır ve iyileşme sürecini hızlandırır.</p>
       
