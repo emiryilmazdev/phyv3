@@ -176,7 +176,7 @@ export default function BookAppointmentSection() {
                   <Image src="/images/icon-benefit-counter-1.svg" alt="Icon" width={50} height={50} />
                 </div>
                 <div className="benefit-counter-content">
-                  <h2><AnimatedCounter end={5} suffix="+" /></h2>
+                  <h2><AnimatedCounter end={2} suffix="+" /></h2>
                   <p>Yıl Deneyim</p>
                 </div>
               </div>

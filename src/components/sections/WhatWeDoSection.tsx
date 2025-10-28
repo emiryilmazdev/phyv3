@@ -61,7 +61,7 @@ export default function WhatWeDoSection() {
                   </div>
                   <div className="what-do-item-content">
                     <h3>Huzurlu Ortam</h3>
-                    <p>En yüksek hijyen standartlarını karşılayan temiz, sterilize edilmiş alanlar.</p>
+                    <p>Kendinizi rahat hissedebileceğiniz, sakin ve huzurlu bir atmosferde tedavi sürecinizi gerçekleştiriyorum.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -72,8 +72,8 @@ export default function WhatWeDoSection() {
                     <FiAward size={32} style={{ color: 'white' }} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Uzman Terapistler</h3>
-                    <p>Alanında deneyimli, sertifikalı fizyoterapistlerle profesyonel hizmet.</p>
+                    <h3>Uzman Dokunuş</h3>
+                    <p>Fizyoterapi alanındaki eğitimim ve deneyimimle, size en uygun profesyonel desteği sunuyorum.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -84,8 +84,8 @@ export default function WhatWeDoSection() {
                     <FiHeart size={32} style={{ color: 'white' }} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Doğal Ürünler</h3>
-                    <p>Tedavilerimizde doğal ve güvenli ürünler kullanarak sağlığınızı koruyoruz.</p>
+                    <h3>Doğal & Fitoterapi Uyumlu Ürünler</h3>
+                    <p>Uygulamalarımda yalnızca vücut dostu, doğal ve fitoterapiye uygun ürünler kullanıyorum. Doğal içeriklerle sağlığınızı korumayı ve desteklemeyi öncelik haline getiriyorum.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -96,8 +96,8 @@ export default function WhatWeDoSection() {
                     <FiUserCheck size={32} style={{ color: 'white' }} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Kişisel Tedavi</h3>
-                    <p>Her hastaya özel, bireysel ihtiyaçlara göre tasarlanmış tedavi programları.</p>
+                    <h3>Kişiye Özel Yaklaşım</h3>
+                    <p>Her bireyin ihtiyacı farklıdır. Tedavi planlarını tamamen size özel, kişisel hedeflerinize ve vücut yapınıza göre oluşturuyorum.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -108,8 +108,8 @@ export default function WhatWeDoSection() {
                     <FiZap size={32} style={{ color: 'white' }} />
                   </div>
                   <div className="what-do-item-content">
-                    <h3>Hijyenik Tesisler</h3>
-                    <p>En yüksek hijyen standartlarını karşılayan temiz, güvenli tedavi ortamları.</p>
+                    <h3>Hijyen ve Güven</h3>
+                    <p>Kullandığım tüm alanlar düzenli olarak sterilize edilir. Yüksek hijyen standartlarını koruyarak güvenli bir tedavi ortamı sunuyorum.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}
@@ -121,7 +121,7 @@ export default function WhatWeDoSection() {
                   </div>
                   <div className="what-do-item-content">
                     <h3>Kolay Online Randevu</h3>
-                    <p>Pratik online randevu sistemi ile kolayca randevunuzu planlayın.</p>
+                    <p>Uygun zamanınızı seçip, birkaç tıklamayla online randevunuzu kolayca oluşturabilirsiniz.</p>
                   </div>
                 </AnimatedDiv>
                 {/* What We Do Item End */}

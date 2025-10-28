@@ -42,14 +42,14 @@ export default function AboutPage() {
         const progress = currentStep / steps
 
         setCounters({
-          years: Math.floor(5 * progress),
+          years: Math.floor(2 * progress),
           countries: Math.floor(4 * progress),
           patients: Math.floor(100 * progress)
         })
 
         if (currentStep >= steps) {
           clearInterval(timer)
-          setCounters({ years: 5, countries: 4, patients: 100 })
+          setCounters({ years: 2, countries: 4, patients: 100 })
         }
       }, stepDuration)
     }
@@ -270,8 +270,8 @@ export default function AboutPage() {
                   lineHeight: '1.6',
                   marginBottom: '20px'
                 }}>
-                  4 farklı ülkede deneyim kazanmış, ortopedi ve rehabilitasyon alanında uzmanlaşmış
-                  fizyoterapistim. Bupa Hospitals'ta MSK Assistant olarak görev yapıyorum.
+                  Dört farklı ülkede edindiğim uluslararası deneyimle, ortopedi ve rehabilitasyon alanında uzmanlaşmış bir fizyoterapistim.
+                  Şu anda özel bir hastanede görev yaparak kas-iskelet sistemi rahatsızlıkları üzerine çalışmalarıma devam ediyorum.
                 </p>
 
                 <div style={{ display: 'flex', gap: '10px', marginBottom: '0', flexWrap: 'wrap' }}>
@@ -423,9 +423,10 @@ export default function AboutPage() {
                   lineHeight: '1.6',
                   marginBottom: '15px'
                 }}>
-                  Fizyoterapi alanındaki yolculuğum, insanlara yardım etme tutkumla başladı.
-                  Üniversite yıllarımda aldığım sağlam eğitimin ardından, farklı ülkelerde
-                  çalışma fırsatı buldum.
+                  Fizyoterapi alanındaki yolculuğum, insanlara hareket özgürlüklerini geri kazandırma ve yaşam kalitelerini artırma tutkumla başladı.
+                  Lisans eğitimimin ardından farklı ülkelerde edindiğim deneyimler sayesinde ortopedi, rehabilitasyon ve özel popülasyonlara yönelik fizyoterapi alanlarında uzmanlaştım.
+                  Şu anda Milton Keynes’te özel bir hastanede görev yapıyor, kas-iskelet sistemi rahatsızlıklarının tedavisi ve sağlıklı yaşlanma üzerine çalışmalarıma devam ediyorum.
+                  Benim için fizyoterapi yalnızca bir meslek değil; insanlara umut verme, onları yeniden hayata bağlama yolculuğudur.
                 </p>
 
                 <p style={{
@@ -575,22 +576,28 @@ export default function AboutPage() {
                 <div style={{ display: 'grid', gap: '20px' }}>
                   {[
                     {
-                      year: '2024 - Şimdi',
+                      year: '2025 – Günümüz',
                       title: 'MSK Assistant & Health Advisor',
-                      company: 'Bupa Hospitals, Milton Keynes',
-                      description: 'Kas-iskelet sistemi rahatsızlıkları ve sağlık danışmanlığı'
+                      company: 'Özel Hastane, Milton Keynes, Birleşik Krallık',
+                      description: 'Kas-iskelet sistemi değerlendirmeleri, rehabilitasyon planlaması ve yaşam tarzı danışmanlığı üzerine çalışıyorum. Multidisipliner ekiplerle iş birliği içinde, hastaların iyileşme süreçlerini destekliyorum.'
                     },
                     {
-                      year: '2020 - 2024',
+                      year: '2020 – 2024',
                       title: 'Fizyoterapist',
-                      company: 'Çeşitli Klinikler (Türkiye & Uluslararası)',
-                      description: 'Ortopedi, geriatri ve rehabilitasyon alanlarında uzmanlaşma'
+                      company: 'Çeşitli Klinikler ve Spor Merkezleri (Türkiye, Hollanda, Litvanya)',
+                      description: 'Ortopedi, sporcu sağlığı, geriatri ve nörolojik rehabilitasyon alanlarında uluslararası deneyim kazandım. Farklı ülkelerdeki hasta bakım yaklaşımlarını gözlemleyerek bütüncül bir tedavi perspektifi geliştirdim.'
                     },
                     {
-                      year: '2015 - 2020',
-                      title: 'Fizyoterapi Eğitimi',
-                      company: 'Üniversite, Türkiye',
-                      description: 'Lisans ve uzmanlık eğitimi ile sağlam akademik temel'
+                      year: '🎓 2023 – 2024',
+                      title: 'Yüksek Lisans (MSc) – Exercise & Physical Activity for Special Populations and Healthy Ageing',
+                      company: 'Middlesex University, Londra — Onur Derecesiyle Mezuniyet',
+                      description: 'Sağlıklı yaşlanma, özel popülasyonlarda egzersiz planlaması ve rehabilitasyon üzerine uzmanlaştım.'
+                    },
+                    {
+                      year: '🎓 2018 – 2022',
+                      title: 'Fizyoterapi ve Rehabilitasyon Lisansı (BSc Hons)',
+                      company: 'Bezmialem Vakıf Üniversitesi, İstanbul — Onur Derecesiyle Mezuniyet',
+                      description: 'Erasmus programı kapsamında Kauno Kolegija, Litvanya\'da eğitim aldım. Ortopedik ve nörolojik rehabilitasyon alanlarında yoğun klinik uygulama deneyimi kazandım.'
                     }
                   ].map((item, index) => (
                     <div
@@ -598,8 +605,8 @@ export default function AboutPage() {
                       style={{
                         display: 'flex',
                         gap: '15px',
-                        paddingBottom: index < 2 ? '20px' : '0',
-                        borderBottom: index < 2 ? '1px solid #EFE7DA' : 'none'
+                        paddingBottom: index < 3 ? '20px' : '0',
+                        borderBottom: index < 3 ? '1px solid #EFE7DA' : 'none'
                       }}
                     >
                       <div

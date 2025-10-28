@@ -102,8 +102,8 @@ export default function JoinUsSection() {
                   color: 'var(--text-color)',
                   fontSize: '16px'
                 }}>
-                  Uzman fizyoterapistlerimiz size özel tedavi planları hazırlayarak sağlık hedeflerinize ulaşmanızda yanınızda. 
-                  Kapsamlı fizyoterapi ve kişisel rehabilitasyon hizmetlerimizle iyileşme sürecinizi hızlandırıyoruz.
+                  Size özel hazırladığım tedavi planlarıyla sağlık hedeflerinize ulaşmanızda yanınızdayım.
+Kapsamlı fizyoterapi ve kişisel rehabilitasyon yaklaşımlarımla, doğal yöntemleri destekleyerek iyileşme sürecinizi hızlandırıyorum.
                 </p>
 
                 {/* Services List */}

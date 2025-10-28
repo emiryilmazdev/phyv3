@@ -4,7 +4,7 @@ import HeroSection from '@/components/sections/HeroSection'
 import AboutSection from '@/components/sections/AboutSection'
 import ServicesSection from '@/components/sections/ServicesSection'
 import WhatWeDoSection from '@/components/sections/WhatWeDoSection'
-import PricingSection from '@/components/sections/PricingSection'
+
 import BookAppointmentSection from '@/components/sections/BookAppointmentSection'
 import FaqsSection from '@/components/sections/FaqsSection'
 import JoinUsSection from '@/components/sections/JoinUsSection'
@@ -29,9 +29,7 @@ export default function Home() {
         <section id="neler-yapiyoruz">
           <WhatWeDoSection />
         </section>
-        <section id="fiyatlar">
-          <PricingSection />
-        </section>
+
         <section id="randevu">
           <BookAppointmentSection />
         </section>

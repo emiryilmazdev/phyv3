@@ -190,9 +190,9 @@ export default function AboutSection() {
               transition={{ delay: 1.1, duration: 0.8 }}
             >
               {[
-                { value: 5, suffix: '+', label: 'Yıl Deneyim' },
+                { value: 2, suffix: '+', label: 'Yıl Deneyim' },
                 { value: 300, suffix: '+', label: 'Mutlu Hasta' },
-                { value: 98, suffix: '%', label: 'Başarı Oranı' }
+                { value: 100, suffix: '%', label: 'Başarı Oranı' }
               ].map((stat, index) => (
                 <motion.div
                   key={index}
@@ -258,7 +258,7 @@ export default function AboutSection() {
                 }}>
                   fizyoterapi ve rehabilitasyon
                 </span>{' '}
-                alanında profesyonel hizmet sunuyorum.
+                hizmeti veriyorum. Istanbul Bezmialem Üniversitesi'nde başladığım yolculuğumu London Middlesex University'de yüksek lisansla sürdürdüm. Özel hastane deneyimimle birlikte kas-iskelet sistemi, nörolojik rehabilitasyon ve spor yaralanmaları üzerine yoğunlaştım. Her bireyin iyileşme sürecine özgü bir yol olduğuna inanıyor, tedavilerimi bu anlayışla planlıyorum.
               </p>
 
               <motion.div
@@ -274,17 +274,7 @@ export default function AboutSection() {
                 transition={{ delay: 2.2, duration: 0.8 }}
               />
 
-              <p style={{
-                fontSize: '16px',
-                lineHeight: '1.7',
-                color: '#666',
-                marginBottom: '40px',
-                fontWeight: '300'
-              }}>
-                Bezmialem Üniversitesi ve Middlesex University eğitimlerimle, 
-                Bupa Cromwell Hospital deneyimimle kas-iskelet sistemi, 
-                nörolojik rehabilitasyon ve spor yaralanmaları alanlarında uzmanlaştım.
-              </p>
+
 
               {/* Ultra Minimal CTA */}
               <motion.div 

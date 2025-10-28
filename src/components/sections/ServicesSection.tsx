@@ -19,7 +19,7 @@ const services = [
   {
     id: 1,
     icon: MdHealthAndSafety,
-    title: 'Fizyoterapi & Rehabilitasyon',
+    title: 'Post op Fizyoterapi &Rehabilitation',
     description: 'Ameliyat sonrası ve kas-iskelet sistemi problemlerinde profesyonel rehabilitasyon desteği.',
     features: ['Post-operatif rehabilitasyon', 'Kas-iskelet sistemi tedavisi', 'Ağrı yönetimi'],
     price: '£65',

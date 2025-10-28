@@ -24,7 +24,7 @@ const services = [
   {
     id: 1,
     icon: FiActivity,
-    title: 'Fizyoterapi & Rehabilitasyon',
+    title: 'Post op Fizyoterapi &Rehabilitation ',
     description: 'Ameliyat sonrası ve kas-iskelet sistemi problemlerinde profesyonel rehabilitasyon desteği.',
     features: [
       'Post-operatif rehabilitasyon',
@@ -148,7 +148,7 @@ export default function ServicesPage() {
             <div className="col-lg-12">
               <div className="page-header-box">
                 <h1 className="text-anime-style-2" data-cursor="-opaque">
-                  Hizmetlerimiz <span>& Fiyatlar</span>
+                  Hizmetlerimiz
                 </h1>
                 <nav>
                   <ol className="breadcrumb">
