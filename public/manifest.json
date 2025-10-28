@@ -1,0 +1,21 @@
+{
+    "name": "Şimal Ongun - Fizyoterapist & Rehabilitasyon Uzmanı",
+    "short_name": "Şimal Ongun",
+    "description": "Milton Keynes'te uzman fizyoterapi hizmetleri",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#EFE7DA",
+    "theme_color": "#8E714F",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ]
+}

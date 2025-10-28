@@ -2,7 +2,6 @@ import type { Metadata } from 'next'
 import { Plus_Jakarta_Sans, Lora } from 'next/font/google'
 import './globals.css'
 import Script from 'next/script'
-import Image from 'next/image'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import GsapAnimations from '@/components/shared/GsapAnimations'
@@ -24,11 +23,77 @@ const lora = Lora({
   preload: true,
 })
 
+export const viewport = {
+  themeColor: '#8E714F',
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+}
+
 export const metadata: Metadata = {
-  title: 'Şimal Ongun - Fizyoterapist & Rehabilitasyon Uzmanı',
+  metadataBase: new URL('https://simalongun.com'),
+  title: {
+    default: 'Şimal Ongun - Fizyoterapist & Rehabilitasyon Uzmanı',
+    template: '%s | Şimal Ongun Fizyoterapi'
+  },
   description: 'Milton Keynes\'te uzman fizyoterapi hizmetleri. Kas-iskelet sistemi problemleri, spor yaralanmaları ve kronik ağrı tedavisinde profesyonel yaklaşım.',
-  keywords: 'fizyoterapi, rehabilitasyon, Milton Keynes, spor yaralanmaları, kas-iskelet sistemi',
-  authors: [{ name: 'Şimal Ongun' }],
+  keywords: [
+    'fizyoterapi',
+    'rehabilitasyon', 
+    'Milton Keynes',
+    'spor yaralanmaları',
+    'kas-iskelet sistemi',
+    'ağrı tedavisi',
+    'fizyoterapist',
+    'Şimal Ongun',
+    'UK fizyoterapi',
+    'İngiltere rehabilitasyon'
+  ],
+  authors: [{ name: 'Şimal Ongun', url: 'https://simalongun.com' }],
+  creator: 'Şimal Ongun',
+  publisher: 'Şimal Ongun Fizyoterapi',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  manifest: '/manifest.json',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'tr_TR',
+    url: 'https://simalongun.com',
+    title: 'Şimal Ongun - Fizyoterapist & Rehabilitasyon Uzmanı',
+    description: 'Milton Keynes\'te uzman fizyoterapi hizmetleri. Kas-iskelet sistemi problemleri, spor yaralanmaları ve kronik ağrı tedavisinde profesyonel yaklaşım.',
+    siteName: 'Şimal Ongun Fizyoterapi',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Şimal Ongun - Fizyoterapist & Rehabilitasyon Uzmanı',
+    description: 'Milton Keynes\'te uzman fizyoterapi hizmetleri.',
+  },
+  verification: {
+    google: 'G-0NQ025S2FX',
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+  },
 }
 
 export default function RootLayout({
@@ -39,9 +104,8 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <head>
-        <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png" />
         <link href="/css/custom.css" rel="stylesheet" media="screen" />
-        
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0NQ025S2FX"
