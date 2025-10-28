@@ -1,0 +1,36 @@
+/* Bootstrap CSS - Modern NPM Import */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Next.js Global Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-plus-jakarta-sans, var(--default-font, 'Plus Jakarta Sans', sans-serif));
+  color: var(--text-color, #868686);
+  background: var(--bg-color, #EFE7DA);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Fix for Next.js Image component */
+span[style*="box-sizing: border-box; display: inline-block"] {
+  max-width: 100% !important;
+}
