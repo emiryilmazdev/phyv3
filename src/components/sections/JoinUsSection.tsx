@@ -44,115 +44,43 @@ export default function JoinUsSection() {
               {/* Unified Contact Container */}
               <AnimatedDiv 
                 delay={0.4}
-                style={{
-                  background: 'linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%)',
-                  border: '1px solid #e9ecef',
-                  borderRadius: '25px',
-                  padding: '40px',
-                  boxShadow: '0 15px 40px rgba(0, 0, 0, 0.1)',
-                  transition: 'all 0.3s ease'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-8px)'
-                  e.currentTarget.style.boxShadow = '0 25px 50px rgba(0, 0, 0, 0.15)'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0)'
-                  e.currentTarget.style.boxShadow = '0 15px 40px rgba(0, 0, 0, 0.1)'
-                }}
+                className="join-us-contact-container"
               >
                 {/* Header Section */}
-                <div style={{ display: 'flex', alignItems: 'center', gap: '20px', marginBottom: '30px' }}>
-                  <div style={{
-                    width: '60px',
-                    height: '60px',
-                    background: 'linear-gradient(135deg, var(--accent-color) 0%, var(--primary-color) 100%)',
-                    borderRadius: '18px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    boxShadow: '0 8px 25px rgba(142, 113, 79, 0.3)'
-                  }}>
+                <div className="join-us-header-section">
+                  <div className="join-us-icon-box">
                     <FiHelpCircle size={28} style={{ color: '#ffffff' }} />
                   </div>
                   <div>
-                    <h3 style={{ 
-                      margin: '0 0 8px 0', 
-                      fontSize: '24px', 
-                      fontWeight: '700',
-                      color: 'var(--primary-color)'
-                    }}>
+                    <h3 className="join-us-title">
                       Yardıma İhtiyacınız Var mı?
                     </h3>
-                    <p style={{ 
-                      margin: 0, 
-                      fontSize: '16px',
-                      color: 'var(--text-color)',
-                      opacity: 0.8
-                    }}>
+                    <p className="join-us-subtitle">
                       Size özel çözümler sunuyoruz
                     </p>
                   </div>
                 </div>
 
                 {/* Description */}
-                <p style={{ 
-                  marginBottom: '30px', 
-                  lineHeight: '1.7',
-                  color: 'var(--text-color)',
-                  fontSize: '16px'
-                }}>
+                <p className="join-us-description">
                   Size özel hazırladığım tedavi planlarıyla sağlık hedeflerinize ulaşmanızda yanınızdayım.
 Kapsamlı fizyoterapi ve kişisel rehabilitasyon yaklaşımlarımla, doğal yöntemleri destekleyerek iyileşme sürecinizi hızlandırıyorum.
                 </p>
 
                 {/* Services List */}
                 <div style={{ marginBottom: '30px' }}>
-                  <h4 style={{ 
-                    fontSize: '18px', 
-                    fontWeight: '600', 
-                    color: 'var(--primary-color)',
-                    marginBottom: '20px'
-                  }}>
+                  <h4 className="join-us-services-title">
                     Hizmetlerimiz
                   </h4>
-                  <div style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
-                    <div style={{ 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      gap: '12px',
-                      fontSize: '15px',
-                      color: 'var(--text-color)'
-                    }}>
-                      <div style={{
-                        width: '32px',
-                        height: '32px',
-                        background: 'var(--accent-color)',
-                        borderRadius: '8px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                      }}>
+                  <div className="join-us-services-list">
+                    <div className="join-us-service-item">
+                      <div className="join-us-service-icon">
                         <FiActivity size={16} style={{ color: '#ffffff' }} />
                       </div>
                       Kapsamlı Fizyoterapi
                     </div>
-                    <div style={{ 
-                      display: 'flex', 
-                      alignItems: 'center', 
-                      gap: '12px',
-                      fontSize: '15px',
-                      color: 'var(--text-color)'
-                    }}>
-                      <div style={{
-                        width: '32px',
-                        height: '32px',
-                        background: 'var(--accent-color)',
-                        borderRadius: '8px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                      }}>
+                    <div className="join-us-service-item">
+                      <div className="join-us-service-icon">
                         <FiTarget size={16} style={{ color: '#ffffff' }} />
                       </div>
                       Kişisel Rehabilitasyon
@@ -161,21 +89,11 @@ Kapsamlı fizyoterapi ve kişisel rehabilitasyon yaklaşımlarımla, doğal yön
                 </div>
 
                 {/* Action Buttons */}
-                <div style={{ display: 'flex', gap: '15px', flexWrap: 'wrap' }}>
+                <div className="join-us-action-buttons">
                   {/* Contact Button */}
                   <Link 
                     href="/iletisim" 
-                    className="btn-default" 
-                    style={{ 
-                      display: 'inline-flex', 
-                      alignItems: 'center', 
-                      gap: '10px',
-                      fontSize: '16px',
-                      padding: '15px 30px',
-                      flex: '1',
-                      minWidth: '200px',
-                      justifyContent: 'center'
-                    }}
+                    className="btn-default join-us-contact-btn"
                   >
                     Daha Fazla Öğren
                     <FiArrowRight size={18} />
@@ -186,42 +104,14 @@ Kapsamlı fizyoterapi ve kişisel rehabilitasyon yaklaşımlarımla, doğal yön
                     href="https://wa.me/447709572412" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    style={{ 
-                      textDecoration: 'none', 
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '12px',
-                      padding: '15px 25px',
-                      background: 'linear-gradient(135deg, #25D366 0%, #128C7E 100%)',
-                      borderRadius: '12px',
-                      boxShadow: '0 8px 25px rgba(37, 211, 102, 0.25)',
-                      transition: 'all 0.3s ease',
-                      flex: '1',
-                      minWidth: '200px',
-                      justifyContent: 'center'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.transform = 'translateY(-3px)'
-                      e.currentTarget.style.boxShadow = '0 12px 35px rgba(37, 211, 102, 0.35)'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.transform = 'translateY(0)'
-                      e.currentTarget.style.boxShadow = '0 8px 25px rgba(37, 211, 102, 0.25)'
-                    }}
+                    className="join-us-whatsapp-btn"
                   >
                     <FaWhatsapp size={24} style={{ color: '#ffffff' }} />
                     <div>
-                      <div style={{ 
-                        color: '#ffffff', 
-                        fontSize: '16px',
-                        fontWeight: '700'
-                      }}>
+                      <div className="join-us-whatsapp-title">
                         WhatsApp
                       </div>
-                      <div style={{ 
-                        color: 'rgba(255, 255, 255, 0.9)', 
-                        fontSize: '12px'
-                      }}>
+                      <div className="join-us-whatsapp-subtitle">
                         Hızlı İletişim
                       </div>
                     </div>

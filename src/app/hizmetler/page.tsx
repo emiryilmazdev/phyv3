@@ -166,99 +166,42 @@ export default function ServicesPage() {
         </div>
       </div>  
     {/* Main Content */}
-      <div style={{ 
-        background: '#F7F3ED',
-        padding: '50px 0'
-      }}>
+      <div className="services-page-container">
         <div className="container" style={{ maxWidth: '1200px' }}>
           
           {/* Hero Section */}
           <motion.div 
-            style={{ 
-              background: 'linear-gradient(135deg, #ffffff 0%, #fefefe 100%)',
-              borderRadius: '16px',
-              padding: '50px 40px',
-              marginBottom: '50px',
-              border: '1px solid #EFE7DA',
-              boxShadow: '0 8px 30px rgba(90, 80, 68, 0.1)',
-              textAlign: 'center'
-            }}
+            className="services-hero-section"
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             variants={fadeIn}
           >
             <motion.div
-              style={{
-                display: 'inline-block',
-                background: '#8E714F',
-                color: '#ffffff',
-                padding: '8px 20px',
-                borderRadius: '20px',
-                fontSize: '12px',
-                fontWeight: '600',
-                marginBottom: '20px',
-                textTransform: 'uppercase',
-                letterSpacing: '0.5px'
-              }}
+              className="services-badge"
               variants={fadeIn}
             >
               Profesyonel Hizmetler
             </motion.div>
             
-            <h2 style={{ 
-              color: '#5A5044', 
-              fontSize: 'clamp(2rem, 4vw, 3rem)', 
-              fontWeight: '700',
-              marginBottom: '20px'
-            }}>
+            <h2 className="services-hero-title">
               Size Özel <span style={{ color: '#8E714F' }}>Fizyoterapi Çözümleri</span>
             </h2>
             
-            <p style={{ 
-              color: '#636A55', 
-              fontSize: '1.1rem', 
-              maxWidth: '700px', 
-              margin: '0 auto 30px',
-              lineHeight: '1.7'
-            }}>
+            <p className="services-hero-description">
               Milton Keynes'te sunduğum kapsamlı fizyoterapi hizmetleri ile sağlığınızı geri kazanın. 
               Her hastamın benzersiz ihtiyaçlarına uygun, kanıta dayalı tedavi yöntemleri uyguluyorum.
             </p>
 
-            <div style={{ display: 'flex', gap: '15px', justifyContent: 'center', flexWrap: 'wrap' }}>
+            <div className="services-hero-buttons">
               <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.98 }}>
-                <Link href="/iletisim" style={{
-                  background: 'linear-gradient(135deg, #8E714F 0%, #7A6142 100%)',
-                  color: '#ffffff',
-                  padding: '12px 24px',
-                  borderRadius: '8px',
-                  textDecoration: 'none',
-                  fontWeight: '600',
-                  fontSize: '14px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  boxShadow: '0 4px 15px rgba(142, 113, 79, 0.3)'
-                }}>
+                <Link href="/iletisim" className="services-btn-primary">
                   <FiPhone size={16} />
                   Ücretsiz Değerlendirme
                 </Link>
               </motion.div>
               
               <motion.div whileHover={{ scale: 1.05, y: -2 }} whileTap={{ scale: 0.98 }}>
-                <Link href="tel:+447709572412" style={{
-                  background: 'transparent',
-                  color: '#8E714F',
-                  padding: '12px 24px',
-                  borderRadius: '8px',
-                  textDecoration: 'none',
-                  fontWeight: '600',
-                  fontSize: '14px',
-                  border: '2px solid #8E714F',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px'
-                }}>
+                <Link href="tel:+447709572412" className="services-btn-secondary">
                   <FiMail size={16} />
                   Hemen İletişim
                 </Link>
@@ -277,16 +220,7 @@ export default function ServicesPage() {
             {services.map((service, index) => (
               <div key={service.id} className="col-lg-4 col-md-6" style={{ marginBottom: '30px' }}>
                 <motion.div
-                  style={{
-                    background: 'linear-gradient(135deg, #ffffff 0%, #fefefe 100%)',
-                    borderRadius: '16px',
-                    padding: '30px 25px',
-                    border: '1px solid #EFE7DA',
-                    boxShadow: '0 8px 25px rgba(90, 80, 68, 0.08)',
-                    height: '100%',
-                    position: 'relative',
-                    overflow: 'hidden'
-                  }}
+                  className="service-card"
                   variants={fadeIn}
                   whileHover={{ 
                     y: -8,
@@ -296,37 +230,20 @@ export default function ServicesPage() {
                   {/* Service Header */}
                   <div style={{ marginBottom: '20px' }}>
                     <div
+                      className="service-icon-box"
                       style={{
-                        width: '60px',
-                        height: '60px',
                         background: `linear-gradient(135deg, ${service.color}20, ${service.color}10)`,
-                        borderRadius: '12px',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        marginBottom: '15px',
                         border: `2px solid ${service.color}30`
                       }}
                     >
                       <service.icon style={{ fontSize: '24px', color: service.color }} />
                     </div>
                     
-                    <h3 style={{ 
-                      color: '#5A5044', 
-                      fontSize: '1.2rem', 
-                      fontWeight: '700',
-                      marginBottom: '8px',
-                      lineHeight: '1.3'
-                    }}>
+                    <h3 className="service-title">
                       {service.title}
                     </h3>
                     
-                    <p style={{ 
-                      color: '#636A55', 
-                      fontSize: '0.9rem',
-                      lineHeight: '1.5',
-                      marginBottom: '15px'
-                    }}>
+                    <p className="service-description">
                       {service.description}
                     </p>
                   </div>

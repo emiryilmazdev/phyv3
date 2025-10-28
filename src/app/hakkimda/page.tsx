@@ -99,10 +99,7 @@ export default function AboutPage() {
         </div>
       </div>
       {/* Compact Main Content */}
-      <div style={{
-        background: '#F7F3ED',
-        padding: '50px 0'
-      }}>
+      <div className="about-page-container">
         <div className="container" style={{
           maxWidth: '1100px',
           padding: '0 20px'
@@ -110,15 +107,7 @@ export default function AboutPage() {
 
           {/* Hero Section - Side by Side */}
           <motion.div
-            style={{
-              background: 'linear-gradient(135deg, #ffffff 0%, #fefefe 100%)',
-              borderRadius: '12px',
-              padding: '40px',
-              marginBottom: '40px',
-              border: '1px solid #EFE7DA',
-              boxShadow: '0 4px 20px rgba(90, 80, 68, 0.08)',
-              transition: 'all 0.3s ease'
-            }}
+            className="about-hero-card"
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             variants={fadeIn}
@@ -130,17 +119,7 @@ export default function AboutPage() {
             <div className="row align-items-center">
               <div className="col-lg-3">
                 <div style={{ textAlign: 'center' }}>
-                  <div
-                    style={{
-                      width: '120px',
-                      height: '120px',
-                      borderRadius: '50%',
-                      overflow: 'hidden',
-                      margin: '0 auto 20px',
-                      border: '3px solid #8E714F',
-                      position: 'relative'
-                    }}
-                  >
+                  <div className="about-profile-image">
                     <Image
                       src="/images/simbo.png"
                       alt="Şimal Ongun"
@@ -148,21 +127,7 @@ export default function AboutPage() {
                       height={120}
                       style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                     />
-                    <div
-                      style={{
-                        position: 'absolute',
-                        bottom: '2px',
-                        right: '2px',
-                        width: '20px',
-                        height: '20px',
-                        background: '#8E714F',
-                        borderRadius: '50%',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        border: '2px solid #ffffff'
-                      }}
-                    >
+                    <div className="about-profile-badge">
                       <FiCheckCircle style={{ color: '#ffffff', fontSize: '10px' }} />
                     </div>
                   </div>

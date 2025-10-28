@@ -6,18 +6,7 @@ import { FiActivity, FiAward, FiHeart, FiUserCheck, FiZap, FiCalendar } from 're
 
 export default function WhatWeDoSection() {
   return (
-    <>
-      <style jsx>{`
-        .icon-box svg {
-          color: white !important;
-          stroke: white !important;
-          fill: white !important;
-        }
-        .icon-box {
-          color: white !important;
-        }
-      `}</style>
-      <div className="what-we-do bg-section">
+    <div className="what-we-do bg-section">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
@@ -57,7 +46,7 @@ export default function WhatWeDoSection() {
                 {/* What We Do Item Start */}
                 <AnimatedDiv className="what-we-do-item" delay={0}>
                   <div className="icon-box">
-                    <FiActivity size={32} style={{ color: 'white' }} />
+                    <FiActivity size={32} />
                   </div>
                   <div className="what-do-item-content">
                     <h3>Huzurlu Ortam</h3>
@@ -69,7 +58,7 @@ export default function WhatWeDoSection() {
                 {/* What We Do Item Start */}
                 <AnimatedDiv className="what-we-do-item" delay={0.2}>
                   <div className="icon-box">
-                    <FiAward size={32} style={{ color: 'white' }} />
+                    <FiAward size={32} />
                   </div>
                   <div className="what-do-item-content">
                     <h3>Uzman Dokunuş</h3>
@@ -81,7 +70,7 @@ export default function WhatWeDoSection() {
                 {/* What We Do Item Start */}
                 <AnimatedDiv className="what-we-do-item" delay={0.4}>
                   <div className="icon-box">
-                    <FiHeart size={32} style={{ color: 'white' }} />
+                    <FiHeart size={32} />
                   </div>
                   <div className="what-do-item-content">
                     <h3>Doğal & Fitoterapi Uyumlu Ürünler</h3>
@@ -93,7 +82,7 @@ export default function WhatWeDoSection() {
                 {/* What We Do Item Start */}
                 <AnimatedDiv className="what-we-do-item" delay={0.6}>
                   <div className="icon-box">
-                    <FiUserCheck size={32} style={{ color: 'white' }} />
+                    <FiUserCheck size={32} />
                   </div>
                   <div className="what-do-item-content">
                     <h3>Kişiye Özel Yaklaşım</h3>
@@ -105,7 +94,7 @@ export default function WhatWeDoSection() {
                 {/* What We Do Item Start */}
                 <AnimatedDiv className="what-we-do-item" delay={0.8}>
                   <div className="icon-box">
-                    <FiZap size={32} style={{ color: 'white' }} />
+                    <FiZap size={32} />
                   </div>
                   <div className="what-do-item-content">
                     <h3>Hijyen ve Güven</h3>
@@ -117,7 +106,7 @@ export default function WhatWeDoSection() {
                 {/* What We Do Item Start */}
                 <AnimatedDiv className="what-we-do-item" delay={1.0}>
                   <div className="icon-box">
-                    <FiCalendar size={32} style={{ color: 'white' }} />
+                    <FiCalendar size={32} />
                   </div>
                   <div className="what-do-item-content">
                     <h3>Kolay Online Randevu</h3>
@@ -131,6 +120,5 @@ export default function WhatWeDoSection() {
           </div>
         </div>
       </div>
-    </>
   )
 }
